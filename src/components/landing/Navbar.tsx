@@ -165,26 +165,26 @@ export function Navbar() {
           style={span ? { maxWidth: "none", marginLeft: span.left, width: span.width, padding: "1.5rem 0" } : undefined}
         >
           {activeNav?.intro && (
-            <div className="w-56 shrink-0">
+            <div className="w-64 shrink-0">
               <p className="text-lg font-bold leading-snug text-ink-900 font-sans-title">
                 {activeNav.intro.title}
               </p>
               <Link
                 href={activeNav.intro.href}
-                className="mt-4 inline-flex items-center custom-rounded border border-ink-200 bg-white px-4 py-2 text-sm font-medium text-ink-900 transition-colors hover:bg-ink-50"
+                className="mt-3 inline-flex items-center custom-rounded border border-ink-200 bg-white px-4 py-2 text-sm font-medium text-ink-900 transition-colors hover:bg-ink-50"
               >
                 {activeNav.intro.cta}
               </Link>
             </div>
           )}
-          <div className="grid flex-1 grid-cols-3 content-start gap-2">
+          <div className="grid flex-1 grid-cols-3 content-start gap-3">
             {activeItems
               ?.filter((it) => !it.empty)
               .map(({ label, href, colStart }) => (
                 <Link
                   key={label}
                   href={href ?? "#"}
-                  className={`block custom-rounded border border-ink-200/80 bg-gradient-to-br from-white/70 to-pantone-50/60 px-3 py-4 text-[13px] font-medium text-ink-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_4px_16px_-6px_rgba(5,11,46,0.15)] backdrop-blur-md transition-colors hover:border-pantone/40 hover:bg-white/60 ${
+                  className={`flex min-h-[76px] items-start custom-rounded border border-ink-200 bg-gradient-to-br from-white to-pantone-50/40 px-4 py-5 text-sm font-medium text-ink-900 transition-colors hover:border-pantone/40 hover:bg-pantone-50/50 ${
                     colStart ?? ""
                   }`}
                 >
