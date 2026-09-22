@@ -67,7 +67,7 @@ export function Navbar() {
   const activeNav = navItems.find((l) => l.label === activeMenu);
   const activeItems = activeNav?.items;
   const headerRef = useRef<HTMLElement>(null);
-  const firstLinkRef = useRef<HTMLAnchorElement>(null);
+  const logoRef = useRef<HTMLAnchorElement>(null);
   const ctaRef = useRef<HTMLAnchorElement>(null);
   const [span, setSpan] = useState<{ left: number; width: number } | null>(null);
 
@@ -79,15 +79,15 @@ export function Navbar() {
     });
   }, []);
 
-  // Align the dropdown horizontally from the start of "Platform" to the end of the CTA.
+  // Align the dropdown horizontally from the logo to the end of the CTA, so it sits below the logo.
   useEffect(() => {
     const measure = () => {
       const header = headerRef.current;
-      const first = firstLinkRef.current;
+      const logo = logoRef.current;
       const cta = ctaRef.current;
-      if (!header || !first || !cta) return;
+      if (!header || !logo || !cta) return;
       const h = header.getBoundingClientRect();
-      const a = first.getBoundingClientRect();
+      const a = logo.getBoundingClientRect();
       const b = cta.getBoundingClientRect();
       if (!a.width || !b.width) return;
       setSpan({
@@ -107,7 +107,7 @@ export function Navbar() {
       onMouseLeave={() => setActiveMenu(null)}
     >
       <div className="mx-auto flex h-[65px] max-w-6xl items-center justify-between px-4 sm:px-0">
-        <Link href="/" className="flex items-center gap-2.5 text-ink-900 group">
+        <Link ref={logoRef} href="/" className="flex items-center gap-2.5 text-ink-900 group">
           <BrainLogo className="w-7 h-7 text-pantone" />
           <span className="font-fira-code text-xl font-semibold tracking-tight text-ink-900">
             ficungini<span className="text-pantone">.ai</span>
@@ -115,10 +115,9 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {navItems.map((l, i) => (
+          {navItems.map((l) => (
             <Link
               key={l.label}
-              ref={i === 0 ? firstLinkRef : undefined}
               href={l.href}
               onMouseEnter={() => setActiveMenu(l.items ? l.label : null)}
               className="text-sm text-ink-600 transition-colors hover:text-ink-900"
