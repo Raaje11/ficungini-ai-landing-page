@@ -19,25 +19,26 @@ type DropdownItem = {
 const navItems: {
   label: string;
   href: string;
+  intro?: { title: string; cta: string; href: string };
   items?: DropdownItem[];
 }[] = [
   {
     label: "Platform",
     href: "/platform",
+    intro: { title: "See how Ficungini analyzes every tender", cta: "See overview", href: "/platform" },
     items: [
       { empty: true },
-      { label: "Overview", href: "/platform" },
       { label: "Integrations", href: "/platform#integrations" },
       { label: "Explorer", href: "/platform#explorer" },
-      { label: "Capabilities", href: "/platform#capabilities", colStart: "lg:col-start-2" },
+      { label: "Capabilities", href: "/platform#capabilities" },
     ],
   },
   {
     label: "Solutions",
     href: "/solutions",
+    intro: { title: "Solutions built around how your team bids", cta: "See overview", href: "/solutions" },
     items: [
       { empty: true },
-      { label: "Overview", href: "/solutions" },
       { label: "Tender Discovery", href: "/solutions#tender-discovery" },
       { label: "Bid Workspace", href: "/solutions#bid-workspace" },
       { label: "Market Intelligence", href: "/solutions#market-intelligence" },
@@ -51,9 +52,9 @@ const navItems: {
   {
     label: "Company",
     href: "/company",
+    intro: { title: "Meet the people building Ficungini", cta: "See overview", href: "/company" },
     items: [
       { empty: true },
-      { label: "Overview", href: "/company" },
       { label: "Team", href: "/company#team" },
     ],
   },
@@ -161,13 +162,23 @@ export function Navbar() {
         }`}
       >
         <div
-          className="mx-auto flex max-w-6xl px-6 py-6"
-          style={span ? { maxWidth: "none", marginLeft: span.left, padding: "1.5rem 0" } : undefined}
+          className="mx-auto flex max-w-6xl gap-10 px-6 py-6"
+          style={span ? { maxWidth: "none", marginLeft: span.left, width: span.width, padding: "1.5rem 0" } : undefined}
         >
-          <div
-            className="grid grid-cols-3 content-start gap-2"
-            style={span ? { width: span.width } : { flex: 1 }}
-          >
+          {activeNav?.intro && (
+            <div className="w-56 shrink-0">
+              <p className="text-lg font-bold leading-snug text-ink-900 font-sans-title">
+                {activeNav.intro.title}
+              </p>
+              <Link
+                href={activeNav.intro.href}
+                className="mt-4 inline-flex items-center custom-rounded border border-ink-200 bg-white px-4 py-2 text-sm font-medium text-ink-900 transition-colors hover:bg-ink-50"
+              >
+                {activeNav.intro.cta}
+              </Link>
+            </div>
+          )}
+          <div className="grid flex-1 grid-cols-3 content-start gap-2">
             {activeItems
               ?.filter((it) => !it.empty)
               .map(({ label, href, colStart }) => (
