@@ -67,9 +67,10 @@ export function Navbar() {
   const activeNav = navItems.find((l) => l.label === activeMenu);
   const activeItems = activeNav?.items;
   const headerRef = useRef<HTMLElement>(null);
+  const logoRef = useRef<HTMLAnchorElement>(null);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const ctaRef = useRef<HTMLAnchorElement>(null);
-  const [span, setSpan] = useState<{ left: number; width: number } | null>(null);
+  const [span, setSpan] = useState<{ left: number; introWidth: number; itemsWidth: number } | null>(null);
 
   useGSAP(() => {
     ScrollTrigger.create({
@@ -79,20 +80,23 @@ export function Navbar() {
     });
   }, []);
 
-  // Align the dropdown horizontally from the start of "Platform" to the end of the CTA.
+  // Intro block sits below the logo; the item grid starts at "Platform" and ends at the CTA.
   useEffect(() => {
     const measure = () => {
       const header = headerRef.current;
+      const logo = logoRef.current;
       const first = firstLinkRef.current;
       const cta = ctaRef.current;
-      if (!header || !first || !cta) return;
+      if (!header || !logo || !first || !cta) return;
       const h = header.getBoundingClientRect();
+      const l = logo.getBoundingClientRect();
       const a = first.getBoundingClientRect();
       const b = cta.getBoundingClientRect();
-      if (!a.width || !b.width) return;
+      if (!l.width || !a.width || !b.width) return;
       setSpan({
-        left: a.left - h.left,
-        width: b.right - a.left,
+        left: l.left - h.left,
+        introWidth: a.left - l.left,
+        itemsWidth: b.right - a.left,
       });
     };
     measure();
@@ -107,7 +111,7 @@ export function Navbar() {
       onMouseLeave={() => setActiveMenu(null)}
     >
       <div className="mx-auto flex h-[65px] max-w-6xl items-center justify-between px-4 sm:px-0">
-        <Link href="/" className="flex items-center gap-2.5 text-ink-900 group">
+        <Link ref={logoRef} href="/" className="flex items-center gap-2.5 text-ink-900 group">
           <BrainLogo className="w-7 h-7 text-pantone" />
           <span className="font-fira-code text-xl font-semibold tracking-tight text-ink-900">
             ficungini<span className="text-pantone">.ai</span>
@@ -162,11 +166,11 @@ export function Navbar() {
         }`}
       >
         <div
-          className="mx-auto flex max-w-6xl gap-10 px-6 py-6"
-          style={span ? { maxWidth: "none", marginLeft: span.left, width: span.width, padding: "1.5rem 0" } : undefined}
+          className="mx-auto flex max-w-6xl px-6 py-6"
+          style={span ? { maxWidth: "none", marginLeft: span.left, padding: "1.5rem 0" } : undefined}
         >
           {activeNav?.intro && (
-            <div className="w-64 shrink-0">
+            <div className="shrink-0" style={span ? { width: span.introWidth } : undefined}>
               <p className="text-lg font-bold leading-snug text-ink-900 font-sans-title">
                 {activeNav.intro.title}
               </p>
@@ -178,7 +182,10 @@ export function Navbar() {
               </Link>
             </div>
           )}
-          <div className="grid flex-1 grid-cols-3 content-start gap-2">
+          <div
+            className="grid grid-cols-3 content-start gap-2"
+            style={span ? { width: span.itemsWidth } : { flex: 1 }}
+          >
             {activeItems
               ?.filter((it) => !it.empty)
               .map(({ label, href, colStart }) => (
