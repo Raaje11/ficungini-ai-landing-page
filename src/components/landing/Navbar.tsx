@@ -105,7 +105,7 @@ export function Navbar() {
       className="site-header sticky top-0 z-[60] border-b border-ink-200 bg-alabaster/90 backdrop-blur-sm"
       onMouseLeave={() => setActiveMenu(null)}
     >
-      <div className="mx-auto flex h-[65px] max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-[65px] max-w-6xl items-center justify-between px-4 sm:px-0">
         <Link href="/" className="flex items-center gap-2.5 text-ink-900 group">
           <BrainLogo className="w-7 h-7 text-pantone" />
           <span className="font-fira-code text-xl font-semibold tracking-tight text-ink-900">
