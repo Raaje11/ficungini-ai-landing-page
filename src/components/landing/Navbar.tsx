@@ -67,7 +67,7 @@ export function Navbar() {
   const activeNav = navItems.find((l) => l.label === activeMenu);
   const activeItems = activeNav?.items;
   const headerRef = useRef<HTMLElement>(null);
-  const logoRef = useRef<HTMLAnchorElement>(null);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const ctaRef = useRef<HTMLAnchorElement>(null);
   const [span, setSpan] = useState<{ left: number; width: number } | null>(null);
 
@@ -79,15 +79,15 @@ export function Navbar() {
     });
   }, []);
 
-  // Align the dropdown horizontally from the logo to the end of the CTA, so it sits below the logo.
+  // Align the dropdown horizontally from the start of "Platform" to the end of the CTA.
   useEffect(() => {
     const measure = () => {
       const header = headerRef.current;
-      const logo = logoRef.current;
+      const first = firstLinkRef.current;
       const cta = ctaRef.current;
-      if (!header || !logo || !cta) return;
+      if (!header || !first || !cta) return;
       const h = header.getBoundingClientRect();
-      const a = logo.getBoundingClientRect();
+      const a = first.getBoundingClientRect();
       const b = cta.getBoundingClientRect();
       if (!a.width || !b.width) return;
       setSpan({
@@ -107,7 +107,7 @@ export function Navbar() {
       onMouseLeave={() => setActiveMenu(null)}
     >
       <div className="mx-auto flex h-[65px] max-w-6xl items-center justify-between px-4 sm:px-0">
-        <Link ref={logoRef} href="/" className="flex items-center gap-2.5 text-ink-900 group">
+        <Link href="/" className="flex items-center gap-2.5 text-ink-900 group">
           <BrainLogo className="w-7 h-7 text-pantone" />
           <span className="font-fira-code text-xl font-semibold tracking-tight text-ink-900">
             ficungini<span className="text-pantone">.ai</span>
@@ -115,9 +115,10 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {navItems.map((l) => (
+          {navItems.map((l, i) => (
             <Link
               key={l.label}
+              ref={i === 0 ? firstLinkRef : undefined}
               href={l.href}
               onMouseEnter={() => setActiveMenu(l.items ? l.label : null)}
               className="text-sm text-ink-600 transition-colors hover:text-ink-900"
@@ -177,14 +178,14 @@ export function Navbar() {
               </Link>
             </div>
           )}
-          <div className="grid flex-1 grid-cols-3 content-start gap-3">
+          <div className="grid flex-1 grid-cols-3 content-start gap-2">
             {activeItems
               ?.filter((it) => !it.empty)
               .map(({ label, href, colStart }) => (
                 <Link
                   key={label}
                   href={href ?? "#"}
-                  className={`flex min-h-[76px] items-start custom-rounded border border-ink-200 bg-gradient-to-br from-white to-pantone-50/40 px-4 py-5 text-sm font-medium text-ink-900 transition-colors hover:border-pantone/40 hover:bg-pantone-50/50 ${
+                  className={`block custom-rounded border border-ink-200/80 bg-gradient-to-br from-white/70 to-pantone-50/60 px-3 py-4 text-[13px] font-medium text-ink-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_4px_16px_-6px_rgba(5,11,46,0.15)] backdrop-blur-md transition-colors hover:border-pantone/40 hover:bg-white/60 ${
                     colStart ?? ""
                   }`}
                 >
