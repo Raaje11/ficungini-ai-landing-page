@@ -4,14 +4,14 @@
   Palette — exactly four colours:
   1. Alabaster white  — page background / light neutral
   2. Matte black       — text / dark neutral
-  3. Pantone Peach     — primary accent
+  3. Electric Coral    — primary accent
   4. Iris              — special, minimal accent (used sparingly)
   Every other shade below is a mix of these four, never a new hue.
 */
 :root {
   --alabaster: #faf9f5;
   --matte-black: #17140f;
-  --pantone: #c96a4e;
+  --pantone: #ff5c49;
   --iris: #4b3f9e;
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .custom-rounded {
-  border-radius: 4px !important;
+  border-radius: 2px !important;
 }
 
 .super-card {
@@ -95,6 +95,30 @@ body {
 .super-card:hover {
   border-color: color-mix(in oklab, var(--pantone) 30%, transparent);
   box-shadow: 0 8px 30px -4px color-mix(in oklab, var(--pantone) 12%, transparent);
+}
+
+/* Tilt card — pointer-tracked border glow + subtle 3D tilt, used on capability
+   and workflow cards to mirror the reference site's interactive cards. */
+.tilt-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  will-change: transform;
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+}
+
+.tilt-card:hover {
+  border-color: color-mix(in oklab, var(--pantone) 45%, transparent);
+}
+
+.tilt-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: var(--op, 0);
+  transition: opacity 0.3s ease;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), var(--color-pantone-100), transparent 70%);
+  pointer-events: none;
 }
 
 .footer-link {
