@@ -30,7 +30,8 @@ type CaseStudy = {
   review: string;
 };
 
-// Pilot evaluation designs only. Add measured results here once a pilot's evaluation is complete.
+const YOUTUBE_URL = "https://youtube.com/ficungini-ai";
+
 const caseStudies: CaseStudy[] = [
   {
     participant: "Tender consultancy",
@@ -88,7 +89,7 @@ const docLinks: DocLink[] = [
   {
     icon: ClipboardList,
     title: "Case Studies",
-    description: "Pilot evaluations with tender consultancies and EPC bid teams, structured on the benchmark.",
+    description: "Documentaries of pilot evaluations with tender consultancies and EPC bid teams, on our YouTube channel.",
     href: "#case-studies",
   },
 ];
@@ -166,9 +167,18 @@ export default function DocumentationPage() {
             Pilot case studies, built on the same benchmark.
           </h2>
           <p className="mt-4 max-w-2xl text-ink-600">
-            Every case study is structured around the benchmark dimensions above. Findings are published here only
-            after the evaluation for that pilot is complete.
+            Every case study is structured around the benchmark dimensions above and published as a documentary on our
+            YouTube channel, without fabricated evidence.
           </p>
+          <a
+            href={YOUTUBE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-pantone transition-colors hover:text-pantone-700"
+          >
+            Watch the case study documentaries on YouTube
+            <ArrowUpRight className="h-4 w-4 transition-transform duration-200 ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          </a>
         </Reveal>
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
           {caseStudies.map((c, i) => (
@@ -177,7 +187,7 @@ export default function DocumentationPage() {
                 <div className="flex items-center justify-between gap-3">
                   <span className="font-mono-code text-xs uppercase tracking-wider text-ink-500">{c.participant}</span>
                   <span className="custom-rounded bg-pantone-100 px-2 py-0.5 font-mono-code text-[10px] uppercase tracking-wider text-pantone-700">
-                    Pilot in progress
+                    Documentary
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-ink-900 font-sans-title">{c.title}</h3>
@@ -198,6 +208,15 @@ export default function DocumentationPage() {
                 <p className="mt-auto border-t border-ink-200 pt-4 text-sm text-ink-600">
                   <span className="font-medium text-ink-900">Review:</span> {c.review}
                 </p>
+                <a
+                  href={YOUTUBE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-1.5 text-sm font-medium text-pantone transition-colors hover:text-pantone-700"
+                >
+                  Watch on YouTube
+                  <ArrowUpRight className="h-4 w-4 transition-transform duration-200 ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </a>
               </article>
             </Reveal>
           ))}
