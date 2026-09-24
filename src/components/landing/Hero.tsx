@@ -7,9 +7,19 @@ export function Hero() {
   return (
     <section className="relative hero-gradient overflow-hidden border-b border-ink-200">
       <div className="relative z-10 mx-auto max-w-6xl px-6 py-20 text-center">
-        <span className="mb-6 block font-mono-code text-sm font-medium uppercase tracking-wider text-pantone">
-          The Tender Intelligence Workspace
-        </span>
+        <Link
+          href="/platform"
+          className="mx-auto mb-8 flex w-fit items-center gap-3 custom-rounded border border-ink-200 bg-white text-sm shadow-sm"
+        >
+          <span className="flex items-center gap-1.5 bg-pantone-100 px-3 py-2 font-medium text-pantone-700">
+            <span className="h-2 w-2 bg-pantone" />
+            New
+          </span>
+          <span className="flex items-center gap-1.5 px-3 py-2 text-ink-900">
+            The Tender Intelligence Workspace
+            <ArrowRight className="h-3.5 w-3.5" />
+          </span>
+        </Link>
 
         <TextRevealHeading className="mx-auto max-w-4xl text-4xl sm:text-6xl font-extrabold tracking-tight text-ink-900 leading-[1.15] font-sans-title">
           Turn complex tenders into{" "}
