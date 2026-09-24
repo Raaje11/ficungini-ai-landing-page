@@ -42,7 +42,7 @@ const navItems: {
       { label: "Tender Discovery", href: "/solutions#tender-discovery" },
       { label: "Bid Workspace", href: "/solutions#bid-workspace" },
       { label: "Market Intelligence", href: "/solutions#market-intelligence" },
-      { label: "Human in the Loop", href: "/solutions#human-in-loop", colStart: "lg:col-start-2" },
+      { label: "Human in the Loop", href: "/solutions#human-in-loop", colStart: "lg:col-start-1" },
     ],
   },
   {
