@@ -56,7 +56,7 @@ type TeamMember = {
 
 const team: TeamMember[] = [
   { initials: "KJ", name: "Kevalkumar S Jadhav", role: "Founder" },
-  { initials: "RK", name: "Rahul Kidiyappanavar", role: "Co-founder" },
+  { initials: "RB", name: "Rashmi Badiger", role: "Software Engineer" },
 ];
 
 function Divider() {
