@@ -1,89 +1,92 @@
-import { Check, Play } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
-import { IsoBar } from "./IsoBar";
+import { BookDemoButton } from "./BookDemoButton";
+import { benchmarkDimensions } from "./benchmarkData";
 
-const compareRows: [string, boolean, boolean, boolean][] = [
-  ["Go/No-Go in minutes, not days", true, false, false],
-  ["Clause-level compliance flags", true, false, true],
-  ["Market intelligence benchmarking", true, false, false],
-  ["Draft directly against source clauses", true, true, false],
-  ["Reusable, searchable tender archive", true, false, false],
-  ["Audit-ready recommendation trail", true, false, true],
-];
+const blindSteps = ["Same tender.", "Same requirements.", "Blind evaluation."];
 
 export function Benchmarks() {
   return (
-    <section>
+    <section id="benchmarks">
       <SectionHeader label="Benchmarks" index={3} total={7} />
 
       <div className="mx-auto max-w-6xl px-6 py-20">
         <Reveal>
-          <span className="block font-mono-code text-sm font-medium text-pantone">DECISION SPEED</span>
+          <span className="block font-mono-code text-sm font-medium text-pantone">TENDER INTELLIGENCE BENCHMARK</span>
           <h2 className="mt-4 max-w-2xl text-3xl sm:text-4xl font-extrabold tracking-tight text-ink-900 font-sans-title">
-            Go/No-Go in minutes,{" "}
-            <span className="text-pantone">not the three days manual review takes.</span>
+            Measured on <span className="text-pantone">what matters in real tender work.</span>
           </h2>
+          <p className="mt-6 max-w-2xl text-lg text-ink-600">
+            Ficungini is evaluated on the capabilities that directly affect tender outcomes—not model benchmarks, token
+            counts, or AI-generated scores.
+          </p>
+        </Reveal>
+
+        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {benchmarkDimensions.map((d, i) => (
+            <Reveal key={d.key} delayMs={(i % 3) * 70}>
+              <div className="flex h-full flex-col gap-3 custom-rounded border border-ink-200 bg-white p-6">
+                <span className="font-mono-code text-xs text-pantone">{String(i + 1).padStart(2, "0")}</span>
+                <h3 className="text-base font-bold text-ink-900 font-sans-title">{d.title}</h3>
+                <p className="text-sm text-ink-600">{d.description}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delayMs={80}>
+          <div className="mt-16 grid gap-10 custom-rounded border border-ink-200 bg-ink-50/50 p-8 sm:p-10 lg:grid-cols-2">
+            <div>
+              <span className="block font-mono-code text-xs uppercase tracking-wider text-pantone">
+                Independent evaluation
+              </span>
+              <h3 className="mt-4 text-2xl font-bold text-ink-900 font-sans-title">
+                Real tenders. Real bid teams. Independent professional review.
+              </h3>
+              <p className="mt-4 text-ink-600">
+                Ficungini is assessed against other tender workflows without revealing which output was produced by
+                which system.
+              </p>
+            </div>
+            <ol className="flex flex-col justify-center gap-3">
+              {blindSteps.map((s, i) => (
+                <li
+                  key={s}
+                  className="flex items-center gap-4 custom-rounded border border-ink-200 bg-white px-5 py-4"
+                >
+                  <span className="font-mono-code text-xs text-pantone">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-base font-semibold text-ink-900 font-sans-title">{s}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
         </Reveal>
 
         <Reveal delayMs={120}>
-          <div className="mt-16 flex items-end justify-center gap-16 custom-rounded border border-ink-200 bg-ink-50/50 px-10 py-14">
-            <IsoBar height={190} color="var(--color-pantone)" label="Ficungini" sub="< 5 min" />
-            <IsoBar height={90} color="var(--color-pantone-300)" label="Generic AI Tools" sub="~45 min" />
-            <IsoBar height={40} color="var(--color-ink-300)" label="Manual Review" sub="~3 days" />
-          </div>
-        </Reveal>
-
-        <Reveal delayMs={160}>
-          <div className="relative mt-16 flex aspect-video items-center justify-center overflow-hidden custom-rounded bg-gradient-to-br from-ink-900 to-pantone-900">
-            <div className="absolute inset-0 flex items-center justify-center text-6xl sm:text-8xl font-black uppercase italic tracking-tight text-white/10">
-              Decide With Confidence
+          <div className="mt-16 custom-rounded border border-ink-200 bg-gradient-to-b from-pantone-50 to-white p-8 sm:p-10 text-center">
+            <span className="block font-mono-code text-xs uppercase tracking-wider text-pantone">
+              Benchmark methodology
+            </span>
+            <p className="mx-auto mt-4 max-w-2xl text-ink-600">
+              Pilot evaluations are conducted with tender consultancy firms and EPC bid teams using real procurement
+              documents. Results are published only after the evaluation process is complete.
+            </p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg font-bold text-ink-900 font-sans-title">
+              No architectural claims. No model marketing. Just measurable tender performance.
+            </p>
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href="/documentation#benchmark-methodology"
+                className="group inline-flex items-center gap-1.5 custom-rounded border border-ink-200 bg-white px-5 py-2.5 text-sm font-medium text-ink-900 transition-colors hover:bg-ink-50"
+              >
+                View Benchmark Methodology
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-200 ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
+              <BookDemoButton className="custom-rounded bg-pantone px-5 py-2.5 text-sm font-medium text-alabaster transition-colors hover:bg-pantone-700">
+                Join the Pilot
+              </BookDemoButton>
             </div>
-            <div className="absolute left-6 top-6 flex items-center gap-3 text-white">
-              <div className="h-10 w-10 rounded-full bg-white/20" />
-              <div>
-                <p className="text-sm font-medium">Ficungini is built for the pressure of bid week</p>
-                <p className="text-xs text-white/70">Founder, Ficungini</p>
-              </div>
-            </div>
-            <button
-              aria-label="Play video"
-              className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-pantone text-alabaster shadow-xl transition-transform hover:scale-105"
-            >
-              <Play className="h-6 w-6 fill-current ml-0.5" />
-            </button>
-          </div>
-        </Reveal>
-
-        <Reveal delayMs={200}>
-          <div className="mt-16 overflow-x-auto custom-rounded border border-ink-200">
-            <table className="w-full min-w-[560px] border-collapse text-left text-sm">
-              <thead>
-                <tr className="border-b border-ink-200 bg-ink-50">
-                  <th className="px-6 py-4 font-mono-code text-xs uppercase tracking-wider text-ink-500">Feature</th>
-                  <th className="px-6 py-4">
-                    <span className="flex items-center gap-2 text-ink-900">
-                      Ficungini
-                      <span className="custom-rounded bg-pantone px-2 py-0.5 text-[10px] font-bold uppercase text-alabaster">
-                        Best
-                      </span>
-                    </span>
-                  </th>
-                  <th className="px-6 py-4 text-ink-500">Generic AI Tools</th>
-                  <th className="px-6 py-4 text-ink-500">Manual Review</th>
-                </tr>
-              </thead>
-              <tbody>
-                {compareRows.map(([feature, a, b, c]) => (
-                  <tr key={feature} className="border-b border-ink-200 last:border-0">
-                    <td className="px-6 py-4 text-ink-900">{feature}</td>
-                    <td className="px-6 py-4">{a && <Check className="h-4 w-4 text-pantone" />}</td>
-                    <td className="px-6 py-4">{b && <Check className="h-4 w-4 text-ink-500" />}</td>
-                    <td className="px-6 py-4">{c && <Check className="h-4 w-4 text-ink-500" />}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
           </div>
         </Reveal>
       </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, FileSearch, FileWarning, TrendingUp } from "lucide-react";
+import { ArrowRight, BadgeCheck, Building2, FileSearch, FileWarning, Lock, MousePointerClick, TrendingUp } from "lucide-react";
 import { StaticPageShell } from "@/components/landing/StaticPageShell";
 import { PageHero } from "@/components/landing/PageHero";
 import { Reveal } from "@/components/landing/Reveal";
@@ -44,6 +44,24 @@ const capabilities: Feature[] = [
   },
 ];
 
+const integrationPoints = [
+  {
+    icon: MousePointerClick,
+    title: "One-click connect",
+    desc: "Authorize a connection once, with no custom integration project or engineering queue.",
+  },
+  {
+    icon: Lock,
+    title: "Encrypted, read-only both ways",
+    desc: "Data moves over an encrypted API connection using GET requests only. Ficungini reads from your ERP, and your ERP reads from Ficungini. Neither side gets write access.",
+  },
+  {
+    icon: Building2,
+    title: "Any ERP with an API",
+    desc: "If your ERP permits API access, we can connect to it to draw on project, financial, and document records.",
+  },
+];
+
 function Divider() {
   return <div aria-hidden className="mx-auto h-px max-w-6xl bg-ink-200" />;
 }
@@ -68,14 +86,13 @@ export default function PlatformPage() {
                   Integrations
                 </span>
                 <h2 className="mt-5 text-2xl sm:text-3xl font-bold text-ink-900 font-sans-title">
-                  Built for Ficungini. Open to the rest of your document stack.
+                  One-click, encrypted, GET-only integration with your ERP.
                 </h2>
-              </div>
-              <div>
-                <p className="text-ink-600">
-                  The platform runs every tender you upload directly, and it&rsquo;s format-agnostic, so RFPs,
-                  corrigenda, and technical annexures from any procuring authority work too. Bring the documents
-                  you already have into one place for analysis, drafting, and archive without starting over.
+                <p className="mt-4 text-ink-600">
+                  Ficungini works with any ERP that allows API access. Access is GET-only in both directions:
+                  Ficungini can only read from your ERP, and your ERP can only read from Ficungini. Neither side can
+                  create, change, or delete anything in the other. Ficungini also runs any
+                  tender you upload directly, from any procuring authority and in any format.
                 </p>
                 <Link
                   href="/documentation"
@@ -85,6 +102,22 @@ export default function PlatformPage() {
                   <ArrowRight className="h-4 w-4 transition-transform duration-200 ease-in-out group-hover:translate-x-0.5" />
                 </Link>
               </div>
+              <ul className="grid gap-3">
+                {integrationPoints.map(({ icon: Icon, title, desc }) => (
+                  <li
+                    key={title}
+                    className="flex items-start gap-4 custom-rounded border border-ink-200 bg-white p-5"
+                  >
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center custom-rounded bg-pantone-100 text-pantone-700">
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <div>
+                      <h3 className="text-base font-bold text-ink-900 font-sans-title">{title}</h3>
+                      <p className="mt-1 text-sm text-ink-600">{desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </Reveal>

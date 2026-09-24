@@ -171,7 +171,7 @@ export function Navbar() {
         >
           {activeNav?.intro && (
             <div className="shrink-0" style={span ? { width: span.introWidth } : undefined}>
-              <p className="text-lg font-bold leading-snug text-ink-900 font-sans-title">
+              <p className="max-w-[15rem] text-balance text-lg font-bold leading-snug text-ink-900 font-sans-title">
                 {activeNav.intro.title}
               </p>
               <Link

@@ -2,34 +2,23 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { TextRevealHeading, TextRevealParagraph } from "./TextReveal";
-import { CheckIcon } from "./Icons";
-import { BookDemoButton } from "./BookDemoButton";
 
 export function Hero() {
   return (
     <section className="relative hero-gradient overflow-hidden border-b border-ink-200">
       <div className="relative z-10 mx-auto max-w-6xl px-6 py-20 text-center">
-        <Link
-          href="/platform"
-          className="mx-auto mb-8 flex w-fit items-center gap-3 custom-rounded border border-ink-200 bg-white text-sm shadow-sm"
-        >
-          <span className="flex items-center gap-1.5 bg-pantone-100 px-3 py-2 font-medium text-pantone-700">
-            <span className="h-2 w-2 bg-pantone" />
-            New
-          </span>
-          <span className="flex items-center gap-1.5 px-3 py-2 text-ink-900">
-            Go/No-Go intelligence, now instant
-            <ArrowRight className="h-3.5 w-3.5" />
-          </span>
-        </Link>
+        <span className="mb-6 block font-mono-code text-sm font-medium uppercase tracking-wider text-pantone">
+          The Tender Intelligence Workspace
+        </span>
 
         <TextRevealHeading className="mx-auto max-w-4xl text-4xl sm:text-6xl font-extrabold tracking-tight text-ink-900 leading-[1.15] font-sans-title">
-          Every tender deserves{" "}
-          <span className="text-pantone">better decisions.</span>
+          Turn complex tenders into{" "}
+          <span className="text-pantone">actionable bids.</span>
         </TextRevealHeading>
 
         <TextRevealParagraph className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-ink-600 leading-relaxed">
-          Built for the professionals who analyze, validate, and craft complex bids.
+          Discover the right opportunities. Understand every requirement. Resolve complications. Build the strategy.
+          Craft the bid. Keep working from evidence through submission.
         </TextRevealParagraph>
 
         <Reveal delayMs={200}>
@@ -41,20 +30,19 @@ export function Hero() {
               Analyze a Tender Free
               <ArrowRight className="h-4 w-4 transition-transform duration-200 ease-in-out group-hover:translate-x-0.5" />
             </a>
-            <BookDemoButton className="flex items-center justify-center custom-rounded border border-ink-200 bg-white px-6 py-4 text-base font-medium text-ink-900 transition-colors hover:bg-ink-50">
-              Book a Demo
-            </BookDemoButton>
+            <Link
+              href="/platform"
+              className="flex items-center justify-center custom-rounded border border-ink-200 bg-white px-6 py-4 text-base font-medium text-ink-900 transition-colors hover:bg-ink-50"
+            >
+              Explore the Platform
+            </Link>
           </div>
         </Reveal>
 
         <Reveal delayMs={300}>
-          <div className="mx-auto mt-6 flex max-w-lg items-center justify-center gap-2 text-xs text-ink-500">
-            <CheckIcon className="h-4 w-4 flex-shrink-0 text-pantone" delay={0.2} />
-            <span>
-              Analyze one tender free every day. Create a free account and subscribe to Ficungini
-              Insights to receive one complimentary Go/No-Go analysis.
-            </span>
-          </div>
+          <p className="mx-auto mt-6 max-w-lg text-sm text-ink-500">
+            For teams where every clause, qualification, and decision matters.
+          </p>
         </Reveal>
 
         <Reveal delayMs={400} scale>
