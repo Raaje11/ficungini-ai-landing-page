@@ -107,7 +107,7 @@ const modules: Module[] = [
   },
 ];
 
-function VideoPanel({ module }: { module: Module }) {
+export function VideoPanel({ module }: { module: Pick<Module, "label" | "video" | "poster" | "duration"> }) {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
