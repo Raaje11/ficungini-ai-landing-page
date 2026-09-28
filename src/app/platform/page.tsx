@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Building2, FileSearch, FileWarning, Lock, MousePointerClick, TrendingUp } from "lucide-react";
+import { ArrowRight, Building2, Compass, Lock, MousePointerClick, PenLine, Radar, TrendingUp } from "lucide-react";
 import { StaticPageShell } from "@/components/landing/StaticPageShell";
 import { PageHero } from "@/components/landing/PageHero";
 import { Reveal } from "@/components/landing/Reveal";
@@ -10,37 +10,37 @@ import { PlatformExplorer } from "@/components/landing/PlatformExplorer";
 export const metadata: Metadata = {
   title: "Platform | Ficungini",
   description:
-    "Go/No-Go recommendations, clause-level compliance flags, and market intelligence in one tender workspace.",
+    "Two agent-powered workflows, Bid Analysis and Craft Bid, from profile-specific discovery to an evidence-checked bid.",
 };
 
 const capabilities: Feature[] = [
   {
     n: "01",
-    tag: "Decision",
-    icon: BadgeCheck,
-    title: "Go / No-Go recommendation",
-    desc: "Know whether the opportunity is worth pursuing before investing hours in drafting.",
+    tag: "Discovery",
+    icon: Radar,
+    title: "Profile-specific discovery",
+    desc: "Tenders matched to your profile, with a notification only when the call is Go or Conditional Go.",
   },
   {
     n: "02",
-    tag: "Compliance",
-    icon: FileWarning,
-    title: "Requirements needing verification",
-    desc: "Identify exact clauses and compliance items that need expert review and sign-off.",
+    tag: "Intelligence",
+    icon: TrendingUp,
+    title: "Verifiable market intelligence",
+    desc: "Multi-parameter market context, each finding traceable to its source so your team can verify it.",
   },
   {
     n: "03",
-    tag: "Clarity",
-    icon: FileSearch,
-    title: "Clauses requiring clarification",
-    desc: "Detect conflicting conditions, ambiguities, and corrigenda that need formal queries.",
+    tag: "Strategy",
+    icon: Compass,
+    title: "Complication resolution and planning",
+    desc: "Specialized AI assistance to work through tender complications and shape the bid strategy.",
   },
   {
     n: "04",
-    tag: "Intelligence",
-    icon: TrendingUp,
-    title: "Critical eligibility observations",
-    desc: "Uncover decisive eligibility nuances and market context before submission.",
+    tag: "Writing",
+    icon: PenLine,
+    title: "Human-assisted, evidence-checked bid writer",
+    desc: "Drafts back-checked against the evidence-backed analysis and strategy, finalised in your niche's bid format and vocabulary.",
   },
 ];
 
