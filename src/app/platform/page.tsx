@@ -134,14 +134,6 @@ export default function PlatformPage() {
 
       <Divider />
 
-      <div id="workflows" className="mx-auto max-w-6xl px-6 py-16 scroll-mt-24">
-        <Reveal>
-          <WorkflowExplorer />
-        </Reveal>
-      </div>
-
-      <Divider />
-
       <div id="capabilities" className="py-16 scroll-mt-24">
         <Reveal className="mx-auto max-w-3xl px-6 text-center mb-12">
           <span className="inline-flex items-center custom-rounded bg-pantone-100 px-3 py-1.5 font-mono-code text-xs uppercase tracking-wider text-pantone-700">

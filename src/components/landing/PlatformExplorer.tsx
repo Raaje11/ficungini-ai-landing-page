@@ -16,6 +16,33 @@ type Module = {
 
 const modules: Module[] = [
   {
+    label: "Bid Analysis",
+    summary: "Six specialized agents, from discovery to Go / No-Go",
+    description:
+      "Six specialized agents find the tenders that fit your profile and analyse them, so you only hear about the ones worth pursuing.",
+    duration: "02:30",
+    video: "/platform/bid-analysis.mp4",
+    poster: "/platform/bid-analysis.jpg",
+    points: [
+      "Profile-specific discovery, with a notification only if the call is Go or Conditional Go",
+      "Multi-parameter, verifiable market intelligence traceable to its source",
+    ],
+  },
+  {
+    label: "Craft Bid",
+    summary: "Eight specialized agents, from strategy to submission",
+    description:
+      "Eight specialized agents work through complications and plan strategy, then help your team write the bid.",
+    duration: "03:05",
+    video: "/platform/craft-bid.mp4",
+    poster: "/platform/craft-bid.jpg",
+    points: [
+      "Specialized AI assistance for complication resolution and strategic planning",
+      "Human-assisted AI bid writer, back-checked against the evidence-backed analysis and strategy",
+      "Finalised in niche-specific bid format and vocabulary",
+    ],
+  },
+  {
     label: "Go/No-Go",
     summary: "An instant call on every tender",
     description:
@@ -107,7 +134,7 @@ const modules: Module[] = [
   },
 ];
 
-export function VideoPanel({ module }: { module: Pick<Module, "label" | "video" | "poster" | "duration"> }) {
+function VideoPanel({ module }: { module: Module }) {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
