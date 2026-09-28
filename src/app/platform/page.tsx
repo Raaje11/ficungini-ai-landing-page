@@ -6,7 +6,6 @@ import { PageHero } from "@/components/landing/PageHero";
 import { Reveal } from "@/components/landing/Reveal";
 import { FeatureGrid, type Feature } from "@/components/landing/FeatureGrid";
 import { PlatformExplorer } from "@/components/landing/PlatformExplorer";
-import { WorkflowExplorer } from "@/components/landing/WorkflowExplorer";
 
 export const metadata: Metadata = {
   title: "Platform | Ficungini",
