@@ -145,6 +145,33 @@ export default function DocumentationPage() {
             published only after the evaluation process is complete.
           </p>
         </Reveal>
+        <Reveal>
+          <div className="mt-10 custom-rounded border border-ink-200 bg-pantone-50 p-6 sm:p-8">
+            <h3 className="text-lg font-bold text-ink-900 font-sans-title">
+              Why tender AI needs a domain-specific benchmark
+            </h3>
+            <ul className="mt-4 grid gap-4 text-sm text-ink-600 sm:grid-cols-2">
+              <li>
+                <span className="font-medium text-ink-900">General benchmarks measure the wrong thing.</span> Reasoning
+                and coding scores don&apos;t show whether a system caught the turnover threshold buried in a corrigendum.
+              </li>
+              <li>
+                <span className="font-medium text-ink-900">Errors are costly and lopsided.</span> A missed eligibility
+                clause can disqualify a bid, and a wrong Go or No-Go wastes drafting effort or forfeits a winnable
+                contract.
+              </li>
+              <li>
+                <span className="font-medium text-ink-900">Ground truth is domain expertise.</span> Only experienced
+                tender professionals can judge whether a strategy is defensible and competitive.
+              </li>
+              <li>
+                <span className="font-medium text-ink-900">Relevance depends on the organization.</span> A good tender
+                for one firm is noise for another, so discovery must be scored against a specific profile and its
+                capabilities.
+              </li>
+            </ul>
+          </div>
+        </Reveal>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {benchmarkDimensions.map((d, i) => (
             <Reveal key={d.key} delayMs={(i % 3) * 70}>
