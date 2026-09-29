@@ -61,12 +61,6 @@ const team: TeamMember[] = [
 
 const legal = [
   {
-    id: "privacy-policy",
-    kicker: "PRIVACY POLICY",
-    title: "How we handle your data.",
-    body: "Our privacy policy will be published here. For questions in the meantime, book a demo and ask the team.",
-  },
-  {
     id: "terms-of-use",
     kicker: "TERMS OF USE",
     title: "Terms for using Ficungini.",
