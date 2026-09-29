@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import type { LucideIcon } from "lucide-react";
-import { ArrowUpRight, ClipboardList, FileText, Newspaper, Scale, Workflow } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { benchmarkDimensions, benchmarkTitleByKey, type BenchmarkDimensionKey } from "@/components/landing/benchmarkData";
 import { StaticPageShell } from "@/components/landing/StaticPageShell";
 import { PageHero } from "@/components/landing/PageHero";
@@ -14,13 +13,6 @@ export const metadata: Metadata = {
 function Divider() {
   return <div aria-hidden className="mx-auto h-px max-w-6xl bg-ink-200" />;
 }
-
-type DocLink = {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-  href?: string;
-};
 
 type CaseStudy = {
   participant: string;
@@ -59,39 +51,6 @@ const caseStudies: CaseStudy[] = [
   },
 ];
 
-const docLinks: DocLink[] = [
-  {
-    icon: Scale,
-    title: "Benchmark Methodology",
-    description: "How Ficungini is evaluated on real tenders, with blind review by tender professionals.",
-    href: "#benchmark-methodology",
-  },
-  {
-    icon: FileText,
-    title: "Whitepaper",
-    description: "The Tender Intelligence Benchmark and the reasoning behind it, in one document.",
-    href: "#whitepaper",
-  },
-  {
-    icon: ClipboardList,
-    title: "Case Studies",
-    description: "Documentaries of pilot evaluations with tender consultancies and EPC bid teams, on our YouTube channel.",
-    href: "#case-studies",
-  },
-  {
-    icon: Newspaper,
-    title: "Blogs",
-    description: "Articles on tender analysis, bid strategy, and how we build Ficungini.",
-    href: "#blogs",
-  },
-  {
-    icon: Workflow,
-    title: "Workflow Guides",
-    description: "How the Bid Analysis and Craft Bid workflows fit together end to end.",
-    href: "#workflow-guides",
-  },
-];
-
 const workflowGuides = [
   {
     title: "Bid Analysis",
@@ -126,33 +85,6 @@ export default function DocumentationPage() {
         title="Everything you need to master Ficungini"
         description="Benchmark methodology, whitepaper, case studies, blogs, and workflow guides."
       />
-
-      <Divider />
-
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-4 sm:grid-cols-2">
-          {docLinks.map((d, i) => {
-            const Icon = d.icon;
-            return (
-              <Reveal key={d.title} delayMs={(i % 2) * 70}>
-                <a
-                  href={d.href ?? "#"}
-                  className="group flex h-full flex-col gap-3 custom-rounded border border-ink-200 bg-white p-6 transition-colors hover:border-pantone"
-                >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center custom-rounded bg-pantone-100 text-pantone-700">
-                    <Icon className="h-5 w-5" />
-                  </span>
-                  <div className="flex items-center gap-1.5">
-                    <h3 className="text-base font-bold text-ink-900 font-sans-title">{d.title}</h3>
-                    <ArrowUpRight className="h-4 w-4 shrink-0 text-ink-500 transition-all duration-200 ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-pantone" />
-                  </div>
-                  <p className="text-sm text-ink-600">{d.description}</p>
-                </a>
-              </Reveal>
-            );
-          })}
-        </div>
-      </div>
 
       <Divider />
 

@@ -48,6 +48,15 @@ const navItems: {
   {
     label: "Documentation",
     href: "/documentation",
+    intro: { title: "Guides, benchmarks, and research behind Ficungini", cta: "See overview", href: "/documentation" },
+    items: [
+      { empty: true },
+      { label: "Benchmark Methodology", href: "/documentation#benchmark-methodology" },
+      { label: "Whitepaper", href: "/documentation#whitepaper" },
+      { label: "Case Studies", href: "/documentation#case-studies" },
+      { label: "Blogs", href: "/documentation#blogs" },
+      { label: "Workflow Guides", href: "/documentation#workflow-guides", colStart: "lg:col-start-1" },
+    ],
   },
   {
     label: "Company",
