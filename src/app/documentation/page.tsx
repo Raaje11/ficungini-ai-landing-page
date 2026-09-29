@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { LucideIcon } from "lucide-react";
-import { ArrowUpRight, BookOpen, Cable, ClipboardList, FileText, Scale, ShieldCheck, Workflow } from "lucide-react";
+import { ArrowUpRight, ClipboardList, FileText, Gavel, Newspaper, Scale, ShieldCheck, Workflow } from "lucide-react";
 import { benchmarkDimensions, benchmarkTitleByKey, type BenchmarkDimensionKey } from "@/components/landing/benchmarkData";
 import { StaticPageShell } from "@/components/landing/StaticPageShell";
 import { PageHero } from "@/components/landing/PageHero";
@@ -8,7 +8,7 @@ import { Reveal } from "@/components/landing/Reveal";
 
 export const metadata: Metadata = {
   title: "Documentation | Ficungini",
-  description: "Guides and references for setting up, integrating, and running tender analysis with Ficungini.",
+  description: "Benchmark methodology, whitepaper, case studies, blogs, workflow guides, and our privacy policy and terms of use.",
 };
 
 function Divider() {
@@ -61,36 +61,84 @@ const caseStudies: CaseStudy[] = [
 
 const docLinks: DocLink[] = [
   {
-    icon: BookOpen,
-    title: "Getting Started",
-    description: "Create a workspace, upload your first tender, and read your first Go/No-Go recommendation.",
-  },
-  {
-    icon: Workflow,
-    title: "Workflow Guides",
-    description: "How the Repository, Compliance, Bid Studio, and Archive modules fit together end to end.",
-  },
-  {
-    icon: Cable,
-    title: "Integration Docs",
-    description: "REST references for pulling analysis results and pushing documents into your own systems.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Compliance & Security",
-    description: "How tender data is encrypted, scoped to your organization, and retained.",
-  },
-  {
     icon: Scale,
     title: "Benchmark Methodology",
     description: "How Ficungini is evaluated on real tenders, with blind review by tender professionals.",
     href: "#benchmark-methodology",
   },
   {
+    icon: FileText,
+    title: "Whitepaper",
+    description: "The Tender Intelligence Benchmark and the reasoning behind it, in one document.",
+    href: "#whitepaper",
+  },
+  {
     icon: ClipboardList,
     title: "Case Studies",
     description: "Documentaries of pilot evaluations with tender consultancies and EPC bid teams, on our YouTube channel.",
     href: "#case-studies",
+  },
+  {
+    icon: Newspaper,
+    title: "Blogs",
+    description: "Articles on tender analysis, bid strategy, and how we build Ficungini.",
+    href: "#blogs",
+  },
+  {
+    icon: Workflow,
+    title: "Workflow Guides",
+    description: "How the Bid Analysis and Craft Bid workflows fit together end to end.",
+    href: "#workflow-guides",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Privacy Policy",
+    description: "What data we collect, how it is used, and how it is protected.",
+    href: "#privacy-policy",
+  },
+  {
+    icon: Gavel,
+    title: "Terms of Use",
+    description: "The terms that govern use of Ficungini.",
+    href: "#terms-of-use",
+  },
+];
+
+const workflowGuides = [
+  {
+    title: "Bid Analysis",
+    description: "Upload a tender and get a requirement-level read of eligibility, compliance, and a Go/No-Go recommendation.",
+  },
+  {
+    title: "Craft Bid",
+    description: "Turn an analysed tender into a structured, reviewable bid draft, with your team in the loop.",
+  },
+];
+
+const comingSoon: { id: string; kicker: string; title: string; body: string }[] = [
+  {
+    id: "whitepaper",
+    kicker: "WHITEPAPER",
+    title: "The Tender Intelligence Benchmark whitepaper.",
+    body: "The full write-up of the benchmark dimensions, evaluation design, and results is being prepared and will be published here once the evaluation process is complete.",
+  },
+  {
+    id: "blogs",
+    kicker: "BLOGS",
+    title: "Notes on tender analysis and bidding.",
+    body: "Our first articles are in progress. They will be listed here as they are published.",
+  },
+  {
+    id: "privacy-policy",
+    kicker: "PRIVACY POLICY",
+    title: "How we handle your data.",
+    body: "Our privacy policy will be published here. For questions in the meantime, book a demo and ask the team.",
+  },
+  {
+    id: "terms-of-use",
+    kicker: "TERMS OF USE",
+    title: "Terms for using Ficungini.",
+    body: "Our terms of use will be published here. For questions in the meantime, book a demo and ask the team.",
   },
 ];
 
@@ -100,7 +148,7 @@ export default function DocumentationPage() {
       <PageHero
         kicker="DOCUMENTATION"
         title="Everything you need to master Ficungini"
-        description="Guides, API references for enterprise deployment, and best practices for tender analysis workflows."
+        description="Benchmark methodology, whitepaper, case studies, blogs, workflow guides, and our legal documents."
       />
 
       <Divider />
@@ -252,26 +300,38 @@ export default function DocumentationPage() {
 
       <Divider />
 
-      <div className="mx-auto max-w-6xl px-6 py-16">
+      <div id="workflow-guides" className="mx-auto max-w-6xl scroll-mt-32 px-6 py-16">
         <Reveal>
-          <div className="custom-rounded border border-ink-200 bg-gradient-to-b from-pantone-50 to-white p-8 sm:p-10 text-center">
-            <span className="inline-flex items-center gap-2 custom-rounded bg-white px-3 py-1.5 font-mono-code text-xs uppercase tracking-wider text-pantone">
-              <FileText className="h-3.5 w-3.5" />
-              API Reference
-            </span>
-            <h2 className="mx-auto mt-5 max-w-xl text-2xl sm:text-3xl font-bold text-ink-900 font-sans-title">
-              Endpoints, authentication, and schemas for pulling analysis out of the platform.
-            </h2>
-            <a
-              href="#"
-              className="group mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-pantone transition-colors hover:text-pantone-700"
-            >
-              Browse Documentation Hub
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-200 ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-            </a>
-          </div>
+          <span className="block font-mono-code text-sm font-medium text-pantone">WORKFLOW GUIDES</span>
+          <h2 className="mt-4 max-w-2xl text-2xl sm:text-3xl font-bold text-ink-900 font-sans-title">
+            Two workflows, from tender to bid.
+          </h2>
         </Reveal>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          {workflowGuides.map((g, i) => (
+            <Reveal key={g.title} delayMs={i * 70}>
+              <div className="flex h-full flex-col gap-2 custom-rounded border border-ink-200 bg-white p-6">
+                <span className="font-mono-code text-xs text-pantone">{String(i + 1).padStart(2, "0")}</span>
+                <h3 className="text-base font-bold text-ink-900 font-sans-title">{g.title}</h3>
+                <p className="text-sm text-ink-600">{g.description}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
+
+      {comingSoon.map((c) => (
+        <div key={c.id}>
+          <Divider />
+          <div id={c.id} className="mx-auto max-w-6xl scroll-mt-32 px-6 py-16">
+            <Reveal>
+              <span className="block font-mono-code text-sm font-medium text-pantone">{c.kicker}</span>
+              <h2 className="mt-4 max-w-2xl text-2xl sm:text-3xl font-bold text-ink-900 font-sans-title">{c.title}</h2>
+              <p className="mt-4 max-w-2xl text-ink-600">{c.body}</p>
+            </Reveal>
+          </div>
+        </div>
+      ))}
     </StaticPageShell>
   );
 }
