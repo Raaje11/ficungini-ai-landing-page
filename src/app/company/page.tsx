@@ -59,15 +59,6 @@ const team: TeamMember[] = [
   { initials: "RB", name: "Rashmi Badiger", role: "Software Engineer" },
 ];
 
-const legal = [
-  {
-    id: "terms-of-use",
-    kicker: "TERMS OF USE",
-    title: "Terms for using Ficungini.",
-    body: "Our terms of use will be published here. For questions in the meantime, book a demo and ask the team.",
-  },
-];
-
 function Divider() {
   return <div aria-hidden className="mx-auto h-px max-w-6xl bg-ink-200" />;
 }
@@ -141,19 +132,6 @@ export default function CompanyPage() {
       </div>
 
       <Divider />
-
-      {legal.map((l) => (
-        <div key={l.id}>
-          <div id={l.id} className="mx-auto max-w-6xl scroll-mt-24 px-6 py-16">
-            <Reveal className="max-w-2xl">
-              <span className="block font-mono-code text-sm font-medium text-pantone">{l.kicker}</span>
-              <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-ink-900 font-sans-title">{l.title}</h2>
-              <p className="mt-4 text-ink-600">{l.body}</p>
-            </Reveal>
-          </div>
-          <Divider />
-        </div>
-      ))}
 
       <Reveal className="mx-auto max-w-4xl px-6 py-16 text-center">
         <div className="flex items-center justify-center gap-2 text-sm text-ink-500">
