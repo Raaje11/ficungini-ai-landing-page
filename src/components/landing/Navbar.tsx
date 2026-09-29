@@ -56,6 +56,8 @@ const navItems: {
     items: [
       { empty: true },
       { label: "Team", href: "/company#team" },
+      { label: "Privacy Policy", href: "/company#privacy-policy" },
+      { label: "Terms of Use", href: "/company#terms-of-use" },
     ],
   },
 ];

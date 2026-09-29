@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { LucideIcon } from "lucide-react";
-import { ArrowUpRight, ClipboardList, FileText, Gavel, Newspaper, Scale, ShieldCheck, Workflow } from "lucide-react";
+import { ArrowUpRight, ClipboardList, FileText, Newspaper, Scale, Workflow } from "lucide-react";
 import { benchmarkDimensions, benchmarkTitleByKey, type BenchmarkDimensionKey } from "@/components/landing/benchmarkData";
 import { StaticPageShell } from "@/components/landing/StaticPageShell";
 import { PageHero } from "@/components/landing/PageHero";
@@ -90,18 +90,6 @@ const docLinks: DocLink[] = [
     description: "How the Bid Analysis and Craft Bid workflows fit together end to end.",
     href: "#workflow-guides",
   },
-  {
-    icon: ShieldCheck,
-    title: "Privacy Policy",
-    description: "What data we collect, how it is used, and how it is protected.",
-    href: "#privacy-policy",
-  },
-  {
-    icon: Gavel,
-    title: "Terms of Use",
-    description: "The terms that govern use of Ficungini.",
-    href: "#terms-of-use",
-  },
 ];
 
 const workflowGuides = [
@@ -128,18 +116,6 @@ const comingSoon: { id: string; kicker: string; title: string; body: string }[] 
     title: "Notes on tender analysis and bidding.",
     body: "Our first articles are in progress. They will be listed here as they are published.",
   },
-  {
-    id: "privacy-policy",
-    kicker: "PRIVACY POLICY",
-    title: "How we handle your data.",
-    body: "Our privacy policy will be published here. For questions in the meantime, book a demo and ask the team.",
-  },
-  {
-    id: "terms-of-use",
-    kicker: "TERMS OF USE",
-    title: "Terms for using Ficungini.",
-    body: "Our terms of use will be published here. For questions in the meantime, book a demo and ask the team.",
-  },
 ];
 
 export default function DocumentationPage() {
@@ -148,7 +124,7 @@ export default function DocumentationPage() {
       <PageHero
         kicker="DOCUMENTATION"
         title="Everything you need to master Ficungini"
-        description="Benchmark methodology, whitepaper, case studies, blogs, workflow guides, and our legal documents."
+        description="Benchmark methodology, whitepaper, case studies, blogs, and workflow guides."
       />
 
       <Divider />
