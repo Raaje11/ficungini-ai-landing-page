@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { benchmarkDimensions, benchmarkTitleByKey, type BenchmarkDimensionKey } from "@/components/landing/benchmarkData";
+import { blogPosts } from "@/content/blogs";
 import { StaticPageShell } from "@/components/landing/StaticPageShell";
 import { PageHero } from "@/components/landing/PageHero";
 import { Reveal } from "@/components/landing/Reveal";
@@ -68,12 +70,6 @@ const comingSoon: { id: string; kicker: string; title: string; body: string }[] 
     kicker: "WHITEPAPER",
     title: "The Tender Intelligence Benchmark whitepaper.",
     body: "The full write-up of the benchmark dimensions, evaluation design, and results is being prepared and will be published here once the evaluation process is complete.",
-  },
-  {
-    id: "blogs",
-    kicker: "BLOGS",
-    title: "Notes on tender analysis and bidding.",
-    body: "Our first articles are in progress. They will be listed here as they are published.",
   },
 ];
 
@@ -223,6 +219,46 @@ export default function DocumentationPage() {
                 <h3 className="text-base font-bold text-ink-900 font-sans-title">{g.title}</h3>
                 <p className="text-sm text-ink-600">{g.description}</p>
               </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+
+      <Divider />
+
+      <div id="blogs" className="mx-auto max-w-6xl scroll-mt-32 px-6 py-16">
+        <Reveal>
+          <span className="block font-mono-code text-sm font-medium text-pantone">BLOGS</span>
+          <h2 className="mt-4 max-w-2xl text-2xl font-bold text-ink-900 font-sans-title sm:text-3xl">
+            Four field notes for bids that hold up under scrutiny.
+          </h2>
+          <p className="mt-4 max-w-2xl text-ink-600">
+            Practical thinking on evidence, complications, drafting and the process metrics that make tender work
+            stronger.
+          </p>
+        </Reveal>
+        <div className="mt-10 grid gap-4 lg:grid-cols-2">
+          {blogPosts.map((post, i) => (
+            <Reveal key={post.slug} delayMs={i * 70}>
+              <article className="flex h-full flex-col gap-5 custom-rounded border border-ink-200 bg-white p-6 transition-colors hover:border-pantone-300 sm:p-8">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-mono-code text-xs uppercase tracking-wider text-pantone">
+                    {post.number} / {post.concept}
+                  </span>
+                  <span className="font-mono-code text-[10px] uppercase tracking-wider text-ink-500">
+                    {post.readTime}
+                  </span>
+                </div>
+                <h3 className="max-w-xl text-2xl font-bold text-ink-900 font-sans-title">{post.title}</h3>
+                <p className="text-base leading-relaxed text-ink-600">{post.excerpt}</p>
+                <Link
+                  href={`/documentation/blogs/${post.slug}`}
+                  className="group mt-auto inline-flex items-center gap-2 text-sm font-medium text-pantone transition-colors hover:text-pantone-700"
+                >
+                  Read the field note
+                  <ArrowUpRight className="h-4 w-4 transition-transform duration-200 ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </Link>
+              </article>
             </Reveal>
           ))}
         </div>
