@@ -9,27 +9,27 @@ import { SectionHeader } from "./SectionHeader";
 const faqs = [
   {
     q: "What is Ficungini?",
-    a: "A tender intelligence workspace: Go/No-Go recommendations, clause-level compliance flags, and market intelligence behind one workflow.",
+    a: "Ficungini is a tender intelligence workspace that helps you decide whether to bid, surface compliance requirements, and organize the evidence needed to build a stronger response.",
   },
   {
     q: "How is pricing calculated?",
-    a: "Individual licenses are a fixed monthly subscription. Business licenses are quoted per organization based on seats and deployment scope.",
+    a: "The Individual plan is a fixed monthly subscription with the full platform and monthly usage limits. Business plans are quoted around your team size, workspace needs, and deployment scope.",
   },
   {
     q: "Is my tender data secure?",
-    a: "Yes. Documents are encrypted at rest and in transit, and every analysis stays scoped to your organization's private workspace.",
+    a: "Ficungini applies encryption, access controls, and security monitoring to protect tender information. Your documents and analyses remain scoped to your organization's workspace.",
   },
   {
     q: "Can multiple people collaborate on a bid?",
-    a: "Business plans include shared workspaces so consultants, reviewers, and sign-off leads work from the same source of truth.",
+    a: "Yes. Business workspaces give consultants, reviewers, and sign-off leads a shared source of truth for tender documents, findings, and bid decisions.",
   },
   {
     q: "Does it work for private and public tenders?",
-    a: "Yes. Ficungini handles RFPs, RFQs, corrigenda, and technical specifications across both public procurement and private EPC bids.",
+    a: "Yes. Ficungini is designed for RFPs, RFQs, corrigenda, and technical specifications across public procurement and private EPC or OEM bids.",
   },
   {
     q: "What happens after my daily free analysis?",
-    a: "You can subscribe to continue analyzing tenders beyond the daily complimentary Go/No-Go, or wait for the next day's free credit.",
+    a: "You can wait for the next day's complimentary analysis or choose a paid plan to continue reviewing tenders beyond the daily free credit.",
   },
 ];
 

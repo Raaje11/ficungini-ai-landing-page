@@ -32,7 +32,7 @@ const columns: { title: string; links: { label: string; href: string }[] }[] = [
     links: [
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Use", href: "/terms" },
-      { label: "Security", href: "#" },
+      { label: "Security", href: "/privacy#security-measures" },
     ],
   },
 ];
@@ -42,10 +42,10 @@ export function Footer() {
     <footer className="bg-pantone px-8 py-16 text-alabaster sm:px-16 lg:px-20">
       <div className="flex flex-col gap-14 lg:flex-row lg:justify-between">
         <div className="lg:max-w-xs">
-          <div className="flex items-center gap-2.5">
+          <Link href="/" aria-label="Ficungini home" className="flex items-center gap-2.5">
             <BrainLogo className="h-8 w-8 text-alabaster" />
             <span className="font-fira-code text-2xl font-semibold tracking-tight">ficungini.ai</span>
-          </div>
+          </Link>
           <h2 className="mt-6 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight font-sans-title">
             Every tender,
             <br />
