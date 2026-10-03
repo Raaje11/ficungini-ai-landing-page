@@ -69,9 +69,9 @@ export default async function BlogPage({ params }: BlogPageProps) {
           {post.sections.map((section, index) => (
             <Reveal key={section.heading} delayMs={index * 50}>
               <section>
-                <h2 className="max-w-2xl text-2xl font-bold text-ink-900 font-sans-title sm:text-3xl">
+                {section.heading && <h2 className="max-w-2xl text-2xl font-bold text-ink-900 font-sans-title sm:text-3xl">
                   {section.heading}
-                </h2>
+                </h2>}
                 <div className="mt-5 max-w-2xl space-y-5 text-lg leading-relaxed text-ink-600">
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
@@ -95,7 +95,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
           </p>
         </Reveal>
 
-        <Reveal>
+        {post.sources.length > 0 && <Reveal>
           <section className="mt-16 max-w-2xl border-t border-ink-200 pt-8">
             <p className="font-mono-code text-xs uppercase tracking-wider text-pantone">Research notes</p>
             <p className="mt-3 text-sm leading-relaxed text-ink-600">
@@ -121,7 +121,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
               ))}
             </ul>
           </section>
-        </Reveal>
+        </Reveal>}
       </div>
     </StaticPageShell>
   );
