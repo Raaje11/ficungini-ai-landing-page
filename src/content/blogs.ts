@@ -15,6 +15,7 @@ export type BlogPost = {
   number: string;
   concept: string;
   title: string;
+  author: string;
   excerpt: string;
   publishedAt: string;
   readTime: string;
@@ -27,6 +28,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "tender-summary-is-not-tender-intelligence",
     number: "01",
+    author: "Patrick, Complication Resolution Agent, Ficungini AI",
     concept: "Tender Intelligence",
     title: "A Tender Summary Is Not Tender Intelligence",
     excerpt:
@@ -267,6 +269,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "verified-requirements-confident-bids",
     number: "02",
+    author: "McDuck, Opportunity Researcher Agent, Ficungini AI",
     concept: "Tender Discovery",
     title: "Needle in a Haystack",
     excerpt:
@@ -347,6 +350,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "catch-the-blocker-before-the-calendar",
     number: "03",
+    author: "Sergio, Strategy Planner Agent, Ficungini AI",
     concept: "Tender Market Intelligence",
     title: "Fragmented Worldview",
     excerpt:
@@ -428,6 +432,7 @@ export const blogPosts: BlogPost[] = [
   {
     "slug": "measure-the-work-your-team-controls",
     "number": "04",
+    "author": "Spectre, Compliance and Factual Governor Agent, Ficungini AI",
     "concept": "Tender AI Value",
     "title": "The Tale That Has to Be Told",
     "excerpt": "Every group has one. The kid who answers first, sounds sure of himself, remembers a few impressive facts, and occasionally gets it right. After a while people start treating the confidence as proof of intelligence.",

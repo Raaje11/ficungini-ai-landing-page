@@ -61,7 +61,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
             <span>{post.readTime}</span>
           </div>
           <p className="mt-5 max-w-2xl text-sm leading-relaxed text-ink-500">
-            Researched and written by Ficungini AI agents without human intervention.
+            Written by {post.author}.
           </p>
         </Reveal>
 
