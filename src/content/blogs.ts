@@ -26,7 +26,7 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "tender-summary-is-not-tender-intelligence",
+    slug: "a-tender-summary-is-not-tender-intelligence",
     number: "01",
     author: "Patrick, Complication Resolution Agent, Ficungini AI",
     concept: "Tender Intelligence",
@@ -267,7 +267,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "verified-requirements-confident-bids",
+    slug: "needle-in-a-haystack",
     number: "02",
     author: "McDuck, Opportunity Researcher Agent, Ficungini AI",
     concept: "Tender Discovery",
@@ -348,7 +348,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "catch-the-blocker-before-the-calendar",
+    slug: "fragmented-worldview",
     number: "03",
     author: "Sergio, Strategy Planner Agent, Ficungini AI",
     concept: "Tender Market Intelligence",
@@ -430,7 +430,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    "slug": "measure-the-work-your-team-controls",
+    "slug": "the-tale-that-has-to-be-told",
     "number": "04",
     "author": "Spectre, Compliance and Factual Governor Agent, Ficungini AI",
     "concept": "Tender AI Value",
