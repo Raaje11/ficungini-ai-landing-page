@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import FicoOrb from "@/components/chat/FicoOrb";
+import FicoMascot from "@/components/chat/FicoMascot";
 import ChatPanel from "@/components/chat/ChatPanel";
 import { centreOf, findLink, hoverBeside, locateText, ring, ripple, sectionOf, wait, waitFor } from "@/components/chat/siteGuide";
 import { onGoToSite, onOpenFico, onStartTour, orbLookAt } from "@/lib/chat/bridge";
@@ -444,7 +444,7 @@ export default function SupportChat() {
             open ? "pointer-events-none scale-0 opacity-0" : ""
           }`}
         >
-          <FicoOrb inverted={onCoral} />
+          <FicoMascot inverted={onCoral} />
         </button>
       </div>
     </>

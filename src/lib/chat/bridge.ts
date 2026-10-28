@@ -62,3 +62,31 @@ export function onStartTour(handler: (steps: TourStep[]) => void): () => void {
   window.addEventListener(START_TOUR_EVENT, listener);
   return () => window.removeEventListener(START_TOUR_EVENT, listener);
 }
+
+/**
+ * Fico is a cat, and a cat takes no notice of a customer until they speak to it. `visitorSpoke()` is called when the
+ * visitor sends something; `ficoReplied()` when Fico's reply lands. The cat (`FicoCat3D`) listens to both: until the
+ * first it goes about its own business, after it she pays attention, and on the second she meows.
+ */
+export const VISITOR_SPOKE_EVENT = "ficungini:visitor-spoke";
+export const FICO_REPLIED_EVENT = "ficungini:fico-replied";
+
+export function visitorSpoke(): void {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(new Event(VISITOR_SPOKE_EVENT));
+}
+
+export function ficoReplied(): void {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(new Event(FICO_REPLIED_EVENT));
+}
+
+export function onVisitorSpoke(handler: () => void): () => void {
+  window.addEventListener(VISITOR_SPOKE_EVENT, handler);
+  return () => window.removeEventListener(VISITOR_SPOKE_EVENT, handler);
+}
+
+export function onFicoReplied(handler: () => void): () => void {
+  window.addEventListener(FICO_REPLIED_EVENT, handler);
+  return () => window.removeEventListener(FICO_REPLIED_EVENT, handler);
+}

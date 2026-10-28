@@ -5,7 +5,7 @@ import { ArrowLeft, Check, X } from "lucide-react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { chatSpec } from "@/lib/chat/spec";
-import FicoOrb from "./FicoOrb";
+import FicoMascot from "./FicoMascot";
 
 gsap.registerPlugin(useGSAP);
 
@@ -62,7 +62,7 @@ export default function FicoCard({
         <div className="mx-auto w-full max-w-[760px] px-5 pb-8 pt-6">
           <div className="flex items-center gap-4">
             <span role="img" aria-label={`${p.name}, the Ficungini digital aide`} className="block h-20 w-20 shrink-0">
-              <FicoOrb />
+              <FicoMascot />
             </span>
             <div className="min-w-0">
               <h3 className="text-lg font-bold leading-tight">{p.name}</h3>

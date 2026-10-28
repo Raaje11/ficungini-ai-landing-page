@@ -7,14 +7,15 @@ import { chatSpec } from "@/lib/chat/spec";
 import { activeQuestion, createSession, reduce, thinkingFor } from "@/lib/chat/session";
 import type { ChatEvent, Msg } from "@/lib/chat/session";
 import { submitRequest } from "@/lib/chat/submit";
-import { goToSite, startTour } from "@/lib/chat/bridge";
+import { ficoReplied, goToSite, startTour, visitorSpoke } from "@/lib/chat/bridge";
 import { commandSuggestions, suggest } from "@/lib/chat/suggestions";
 import type { Answer } from "@/lib/chat/types";
 import Markdown from "./Markdown";
 import QuestionControls from "./QuestionControls";
 import ThinkingLoader from "./ThinkingLoader";
 import FicoCard from "./FicoCard";
-import FicoOrb from "./FicoOrb";
+import FicoMascot from "./FicoMascot";
+import FicoCatAvatar from "./FicoCatAvatar";
 import { ReviewCard, StatusCard } from "./cards";
 
 const iconButton =
@@ -76,6 +77,8 @@ export default function ChatPanel({ onMinimize, open = true }: { onMinimize: () 
     (event: ChatEvent) => {
       const before = latest.current.messages.length;
       const next = apply(event);
+      // A cat takes no notice of a customer until they speak to it.
+      if (event.type === "text" || event.type === "answer" || event.type === "action" || event.type === "profile") visitorSpoke();
       if (event.type === "answer" || event.type === "text" || event.type === "action" || event.type === "profile") {
         // Show the person's own message now and hold Fico's reply back briefly.
         let shown = before;
@@ -94,7 +97,10 @@ export default function ChatPanel({ onMinimize, open = true }: { onMinimize: () 
           setPhrases(thinkingFor(chatSpec, fresh));
           setHold(shown);
           clearTimeout(timer.current);
-          timer.current = setTimeout(() => setHold(null), heavy ? THINK_CARD_MS : THINK_MS);
+          timer.current = setTimeout(() => {
+            setHold(null);
+            ficoReplied();
+          }, heavy ? THINK_CARD_MS : THINK_MS);
         }
       }
       if (next.effect) {
@@ -196,7 +202,7 @@ export default function ChatPanel({ onMinimize, open = true }: { onMinimize: () 
             className="shrink-0 rounded-full transition-transform duration-200 ease-out hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pantone"
           >
             <span className="block h-9 w-9">
-              <FicoOrb />
+              <FicoMascot />
             </span>
           </button>
           <div className="min-w-0">
@@ -358,11 +364,11 @@ export default function ChatPanel({ onMinimize, open = true }: { onMinimize: () 
   );
 }
 
-/** Fico beside its messages: the same sphere, still, so a long conversation doesn't fill with blinking. */
+/** Fico beside its messages: the flat cat, still, so a long conversation doesn't hold a canvas per message. */
 function Avatar() {
   return (
     <span aria-hidden className="block h-7 w-7 shrink-0">
-      <FicoOrb lively={false} />
+      <FicoCatAvatar />
     </span>
   );
 }
