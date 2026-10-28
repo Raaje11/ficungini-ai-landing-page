@@ -1,0 +1,1032 @@
+{
+  "locale": "en-IN",
+  "ui": {
+    "welcome_message": "I can answer questions about Ficungini, or set up a demo with the team.",
+    "card": {
+      "name": "Fico",
+      "subtitle": "Digital aide · Ficungini",
+      "bio": "Answers questions about the platform and connects you with the team.",
+      "ask_label": "Ask Fico",
+      "team_label": "Talk to the team",
+      "sections": [
+        {
+          "title": "Does",
+          "negative": false,
+          "items": [
+            "Answers questions from what this website publishes",
+            "Summarises the Privacy Policy and Terms of Service",
+            "Takes a demo request or passes you to the team"
+          ]
+        },
+        {
+          "title": "Doesn't",
+          "negative": true,
+          "items": [
+            "Chat outside Ficungini work",
+            "Guess: Fico says when it doesn't know",
+            "Replace the team: Fico hands over"
+          ]
+        }
+      ]
+    },
+    "thinking": {
+      "default": ["Reading your message", "Checking what the site says", "Putting a reply together"],
+      "unanswered": ["Looking for a documented answer", "Checking what I can say for sure"],
+      "submit": ["Sending your request", "Waiting for confirmation"]
+    },
+    "composer_placeholder": "Ask Fico about Ficungini…",
+    "safety_notice": "Do not share passwords, tender documents or other confidential bid information in this chat."
+  },
+  "engine": {
+    "tie_breaker": "Ask the user to choose between the top matching topics. Never silently guess when two intents have similar scores.",
+    "unknown_intent_response": "I'm not sure what you need yet. You can ask about the platform, pricing, security or the Privacy Policy, or I can set up a demo.",
+    "unanswered_responses": [
+      "I don't have an answer to that, and I'd rather not guess. I'll pass your question to the team along with any request you send, or you can ask to talk to a person.",
+      "That's not something I have reliable information on, so I won't make it up. I've noted it for the team, and it goes with any request you send. You can also ask for a person.",
+      "I can't answer that one with confidence. Your question will go to the team with any request you submit, or just say \"talk to a person\"."
+    ],
+    "unsure_hint": "No problem. Pick whichever is closest, or choose Something else and the team can sort it out with you."
+  },
+  "route_catalog": [
+    {
+      "id": "book_demo",
+      "label": "Book a demo",
+      "phrases": [
+        "book a demo",
+        "book demo",
+        "demo",
+        "a demo",
+        "schedule a demo",
+        "request a demo",
+        "live demo",
+        "see a demo",
+        "want a demo",
+        "get a demo",
+        "demo request",
+        "talk to sales",
+        "speak to sales",
+        "contact sales",
+        "request a quote",
+        "get a quote",
+        "business plan quote",
+        "quote for my team",
+        "set up a demo"
+      ]
+    },
+    {
+      "id": "human_handoff",
+      "label": "Talk to a person",
+      "phrases": [
+        "talk to a person",
+        "talk to a human",
+        "speak to a person",
+        "speak to a human",
+        "speak to someone",
+        "talk to someone",
+        "talk to the team",
+        "real person",
+        "human",
+        "contact the team",
+        "contact you",
+        "contact support",
+        "get in touch",
+        "reach the team",
+        "email the team",
+        "call me",
+        "customer support",
+        "account login",
+        "cannot log in",
+        "can t log in",
+        "forgot password",
+        "reset my password",
+        "login problem",
+        "account problem"
+      ]
+    }
+  ],
+  "site_map": [
+    {
+      "id": "home",
+      "label": "the home page",
+      "path": "/",
+      "keywords": [
+        "home",
+        "home page",
+        "homepage",
+        "main page",
+        "landing page",
+        "front page"
+      ]
+    },
+    {
+      "id": "why_ficungini",
+      "label": "Why Ficungini",
+      "path": "/",
+      "find": "Why bid teams choose Ficungini",
+      "keywords": [
+        "why ficungini",
+        "why bid teams choose ficungini",
+        "why choose ficungini",
+        "why us"
+      ]
+    },
+    {
+      "id": "challenges",
+      "label": "the challenges Ficungini solves",
+      "path": "/",
+      "find": "The challenges we solve",
+      "keywords": [
+        "challenges",
+        "problems we solve",
+        "bid team problems",
+        "common problems"
+      ]
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing",
+      "path": "/",
+      "hash": "#pricing",
+      "keywords": [
+        "pricing",
+        "prices",
+        "price list",
+        "plans",
+        "pricing section",
+        "individual plan",
+        "business plan",
+        "request a quote"
+      ]
+    },
+    {
+      "id": "faq",
+      "label": "the FAQ",
+      "path": "/",
+      "find": "Frequently asked questions",
+      "keywords": [
+        "faq",
+        "faqs",
+        "frequently asked questions",
+        "questions and answers"
+      ]
+    },
+    {
+      "id": "platform",
+      "label": "Platform",
+      "path": "/platform",
+      "keywords": [
+        "platform",
+        "platform page",
+        "the platform",
+        "overview",
+        "workflows"
+      ]
+    },
+    {
+      "id": "integrations",
+      "label": "Integrations",
+      "path": "/platform",
+      "hash": "#integrations",
+      "keywords": [
+        "integrations",
+        "erp",
+        "erp integration",
+        "erp integrations",
+        "connect your erp",
+        "api"
+      ]
+    },
+    {
+      "id": "explorer",
+      "label": "the Platform Explorer",
+      "path": "/platform",
+      "hash": "#explorer",
+      "keywords": [
+        "explorer",
+        "platform explorer",
+        "bid analysis",
+        "craft bid",
+        "agents",
+        "workflow explorer"
+      ]
+    },
+    {
+      "id": "capabilities",
+      "label": "Capabilities",
+      "path": "/platform",
+      "hash": "#capabilities",
+      "keywords": [
+        "capabilities",
+        "what your team knows",
+        "features"
+      ]
+    },
+    {
+      "id": "solutions",
+      "label": "Solutions",
+      "path": "/solutions",
+      "keywords": [
+        "solutions",
+        "solutions page",
+        "our solutions",
+        "use cases"
+      ]
+    },
+    {
+      "id": "tender_discovery",
+      "label": "Tender Discovery",
+      "path": "/solutions",
+      "hash": "#tender-discovery",
+      "keywords": [
+        "tender discovery",
+        "discovery",
+        "profile specific discovery",
+        "tender matching"
+      ]
+    },
+    {
+      "id": "bid_workspace",
+      "label": "the Bid Workspace",
+      "path": "/solutions",
+      "hash": "#bid-workspace",
+      "keywords": [
+        "bid workspace",
+        "workspace",
+        "collaboration",
+        "bid team workspace"
+      ]
+    },
+    {
+      "id": "market_intelligence",
+      "label": "Market Intelligence",
+      "path": "/solutions",
+      "hash": "#market-intelligence",
+      "keywords": [
+        "market intelligence",
+        "market insight",
+        "market context"
+      ]
+    },
+    {
+      "id": "human_in_loop",
+      "label": "Human in the Loop",
+      "path": "/solutions",
+      "hash": "#human-in-loop",
+      "keywords": [
+        "human in the loop",
+        "human in loop",
+        "human review",
+        "human sign off"
+      ]
+    },
+    {
+      "id": "documentation",
+      "label": "Documentation",
+      "path": "/documentation",
+      "keywords": [
+        "documentation",
+        "docs",
+        "documentation page",
+        "guides",
+        "resources"
+      ]
+    },
+    {
+      "id": "benchmark",
+      "label": "Benchmark Methodology",
+      "path": "/documentation",
+      "hash": "#benchmark-methodology",
+      "keywords": [
+        "benchmark",
+        "benchmark methodology",
+        "tender intelligence benchmark",
+        "methodology"
+      ]
+    },
+    {
+      "id": "whitepaper",
+      "label": "the Whitepaper",
+      "path": "/documentation",
+      "hash": "#whitepaper",
+      "keywords": [
+        "whitepaper",
+        "white paper",
+        "benchmark whitepaper"
+      ]
+    },
+    {
+      "id": "case_studies",
+      "label": "Case Studies",
+      "path": "/documentation",
+      "hash": "#case-studies",
+      "keywords": [
+        "case studies",
+        "case study",
+        "pilot case studies",
+        "documentary"
+      ]
+    },
+    {
+      "id": "workflow_guides",
+      "label": "Workflow Guides",
+      "path": "/documentation",
+      "hash": "#workflow-guides",
+      "keywords": [
+        "workflow guides",
+        "workflow guide",
+        "tender to bid guides"
+      ]
+    },
+    {
+      "id": "blogs",
+      "label": "the Blogs",
+      "path": "/documentation",
+      "hash": "#blogs",
+      "keywords": [
+        "blogs",
+        "blog",
+        "field notes",
+        "articles",
+        "posts"
+      ]
+    },
+    {
+      "id": "blog_summary",
+      "label": "A Tender Summary Is Not Tender Intelligence",
+      "path": "/documentation/blogs/a-tender-summary-is-not-tender-intelligence",
+      "keywords": [
+        "a tender summary is not tender intelligence",
+        "tender summary",
+        "tender summary blog"
+      ]
+    },
+    {
+      "id": "blog_needle",
+      "label": "Needle in a Haystack",
+      "path": "/documentation/blogs/needle-in-a-haystack",
+      "keywords": [
+        "needle in a haystack",
+        "needle haystack blog"
+      ]
+    },
+    {
+      "id": "blog_fragmented",
+      "label": "Fragmented Worldview",
+      "path": "/documentation/blogs/fragmented-worldview",
+      "keywords": [
+        "fragmented worldview",
+        "fragmented worldview blog"
+      ]
+    },
+    {
+      "id": "blog_tale",
+      "label": "The Tale That Has to Be Told",
+      "path": "/documentation/blogs/the-tale-that-has-to-be-told",
+      "keywords": [
+        "the tale that has to be told",
+        "tale that has to be told",
+        "tale blog"
+      ]
+    },
+    {
+      "id": "company",
+      "label": "the Company page",
+      "path": "/company",
+      "keywords": [
+        "company",
+        "company page",
+        "about",
+        "about us",
+        "about ficungini",
+        "who built ficungini"
+      ]
+    },
+    {
+      "id": "team",
+      "label": "the Team",
+      "path": "/company",
+      "hash": "#team",
+      "keywords": [
+        "team",
+        "the team",
+        "founder",
+        "our team",
+        "who is on the team"
+      ]
+    },
+    {
+      "id": "privacy",
+      "label": "the Privacy Policy",
+      "path": "/privacy",
+      "keywords": [
+        "privacy policy",
+        "privacy",
+        "privacy page",
+        "data policy"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "Security measures",
+      "path": "/privacy",
+      "hash": "#security-measures",
+      "keywords": [
+        "security",
+        "security measures",
+        "data security",
+        "encryption"
+      ]
+    },
+    {
+      "id": "terms",
+      "label": "the Terms of Use",
+      "path": "/terms",
+      "keywords": [
+        "terms of use",
+        "terms",
+        "terms of service",
+        "terms and conditions",
+        "tos"
+      ]
+    }
+  ],
+  "site_replies": {
+    "go": [
+      "Sure, taking you to {label}.",
+      "On it. Heading to {label} now.",
+      "Let me show you {label}."
+    ],
+    "choose": "A few places fit: {options}. Tell me which one, for example “take me to {first}”."
+  },
+  "tour": {
+    "after_asks": 2,
+    "topics": [
+      "overview",
+      "company",
+      "solutions_audience"
+    ],
+    "offers": [
+      "You seem curious about Ficungini. Want me to walk you through the whole site, page by page?",
+      "Since you’re asking about Ficungini, I could show you around properly: what it does, who it is for and what it costs. Shall I?",
+      "Happy to keep answering, or I can give you the whole picture in one short tour. Want that?"
+    ],
+    "yes": "Yes, show me around",
+    "no": "Not now",
+    "accepted": [
+      "Great. I’ll take you through it. Use Next to move on, or Dismiss (or Ctrl+C) to stop at any point.",
+      "Let’s go. Press Next when you’re ready for the next stop, or Dismiss (or Ctrl+C) to end it."
+    ],
+    "declined": [
+      "No problem. Ask me anything whenever you like.",
+      "Sure. I’m here if you’d like it later."
+    ],
+    "steps": [
+      {
+        "label": "Ficungini",
+        "path": "/",
+        "text": "Ficungini is a tender intelligence workspace. It helps you decide whether to bid, surfaces compliance requirements and organises the evidence behind a stronger response, with humans in control."
+      },
+      {
+        "label": "Platform",
+        "path": "/platform",
+        "text": "Two agent-powered workflows, Bid Analysis and Craft Bid, run from profile-specific discovery to an evidence-checked bid. It connects to any ERP that allows API access."
+      },
+      {
+        "label": "Solutions",
+        "path": "/solutions",
+        "text": "Tender discovery tuned to you, a high-performance bid workspace, market intelligence you can trust, and a human always in the loop."
+      },
+      {
+        "label": "Pricing",
+        "path": "/",
+        "hash": "#pricing",
+        "text": "Every capability is included in both plans. Individual has monthly usage limits. Business adds collaborative workspaces and priority onboarding, and you can book a demo from here."
+      },
+      {
+        "label": "Documentation",
+        "path": "/documentation",
+        "text": "Benchmark methodology, pilot case studies, workflow guides and field-note blogs for bid teams."
+      },
+      {
+        "label": "Company",
+        "path": "/company",
+        "text": "Built by tender experts, for tender experts. That’s the whole site. Ask me anything else, or I can set up a demo with the team."
+      }
+    ]
+  },
+  "flows": {
+    "start": {
+      "entry_message": "What would you like to know?",
+      "entry_variants": [
+        "What would you like to know?",
+        "What can I help you with?",
+        "What would you like to look at?",
+        "Ask me anything about Ficungini, or pick one below."
+      ],
+      "question": {
+        "id": "start_intent",
+        "type": "select",
+        "options": [
+          { "label": "What does Ficungini do?", "value": "q:overview" },
+          { "label": "How is pricing calculated?", "value": "q:pricing" },
+          { "label": "Is my tender data secure?", "value": "q:security" },
+          { "label": "Can my team collaborate on a bid?", "value": "q:collaboration" },
+          { "label": "Book a demo", "value": "book_demo" },
+          { "label": "Talk to a person", "value": "human_handoff" }
+        ]
+      }
+    },
+    "book_demo": {
+      "purpose": "Collect a demo request for the Ficungini team to review.",
+      "steps": [
+        {
+          "id": "topic",
+          "question": "What would you like the demo to focus on?",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Go/No-Go and tender analysis",
+            "Bid workspace and collaboration",
+            "Business plan pricing for a team",
+            "Security and data handling",
+            "ERP integration",
+            "Something else"
+          ]
+        },
+        {
+          "id": "team_size",
+          "question": "How many people would use it?",
+          "type": "select",
+          "required": true,
+          "options": ["Just me", "2 to 5", "6 to 20", "More than 20", "Not sure yet"]
+        },
+        {
+          "id": "profile",
+          "question": "To get this to the right person, I'll need a few details. You only have to enter them once.",
+          "type": "form",
+          "required": true,
+          "fields": [
+            { "id": "name", "label": "Your name", "required": true },
+            { "id": "work_email", "label": "Work email", "format": "email", "required": true },
+            { "id": "company", "label": "Company or organisation", "required": false },
+            { "id": "phone", "label": "Phone (optional)", "format": "phone", "required": false }
+          ]
+        },
+        {
+          "id": "preferred_window",
+          "question": "What days or time window work for you? (optional)",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "submit_action": "create_demo_request",
+      "pending_message": "Your demo request is ready to submit. It is not a confirmed booking until the Ficungini team confirms a time.",
+      "next_actions": ["submit_request", "edit_details"],
+      "intro_variants": [
+        "Of course. I'll take a few details so the team can set up your demo. Nothing is sent until you've reviewed it.",
+        "Happy to set that up. A few details first, and you'll review everything before it goes."
+      ]
+    },
+    "consent_step": {
+      "id": "consent",
+      "question": "May Ficungini contact you to follow up on this request?",
+      "type": "select",
+      "required": true,
+      "options": ["Yes, I consent", "No"]
+    }
+  },
+  "knowledge": {
+    "topics": [
+      {
+        "id": "overview",
+        "source": { "label": "Platform", "path": "/platform" },
+        "generic": true,
+        "keywords": [
+          "what does ficungini do",
+          "what is ficungini",
+          "about ficungini",
+          "tender intelligence",
+          "tender intelligence workspace",
+          "who is ficungini for",
+          "who is it for",
+          "who is this for",
+          "who uses ficungini",
+          "what do you do",
+          "what do you offer",
+          "what is the platform",
+          "overview"
+        ],
+        "answer": "Ficungini is a tender intelligence workspace. It helps you decide whether to bid, surface compliance requirements, and organize the evidence needed to build a stronger response. It is made to amplify experienced tender consultants, EPC bid teams and procurement professionals, while keeping humans in control. It works for RFPs, RFQs, corrigenda and technical specifications across public procurement and private EPC or OEM bids."
+      },
+      {
+        "id": "platform_workflows",
+        "source": { "label": "Platform", "path": "/platform" },
+        "keywords": [
+          "platform",
+          "features",
+          "capabilities",
+          "workflows",
+          "bid analysis",
+          "craft bid",
+          "what does the platform include",
+          "what is included",
+          "modules",
+          "bid studio",
+          "tender repository",
+          "bid studio and archive",
+          "what can the platform do"
+        ],
+        "answer": "The platform has two agent-powered workflows, **Bid Analysis** and **Craft Bid**, from profile-specific discovery to an evidence-checked bid.\n- **Discovery:** tenders matched to your profile, with a notification only when the call is Go or Conditional Go\n- **Market intelligence:** multi-parameter context, each finding traceable to its source\n- **Strategy:** specialized AI assistance to work through tender complications and shape the bid strategy\n- **Writing:** a human-assisted, evidence-checked bid writer, finalised in your niche's bid format and vocabulary\nBoth plans include Tender Intelligence, Tender Repository, and Bid Studio & Archive."
+      },
+      {
+        "id": "go_no_go",
+        "source": { "label": "Platform", "path": "/platform" },
+        "keywords": [
+          "go no go",
+          "go/no-go",
+          "go or no go",
+          "conditional go",
+          "should we bid",
+          "decide whether to bid",
+          "bid decision",
+          "bid or no bid",
+          "recommendation",
+          "recommendations"
+        ],
+        "answer": "Ficungini brings Go/No-Go analysis, compliance flags and market intelligence together in one tender workspace. Every compliance conclusion is backed by evidence from the tender itself, and every recommendation is traceable, so your team can review, question and defend it. Discovery sends a notification only when a call is Go or Conditional Go."
+      },
+      {
+        "id": "compliance",
+        "source": { "label": "Home page", "path": "/" },
+        "keywords": [
+          "compliance",
+          "compliance flags",
+          "eligibility",
+          "disqualification",
+          "disqualification clauses",
+          "exemptions",
+          "qualifications",
+          "missing qualifications",
+          "eligibility paths",
+          "clauses",
+          "corrigendum",
+          "corrigenda",
+          "amendments",
+          "mid cycle changes"
+        ],
+        "answer": "Every compliance conclusion is backed by evidence from the tender itself, not a guess. Beyond the obvious requirements, Ficungini actively searches for missing qualifications, exemptions and alternative eligibility paths before you submit. It also keeps watch on tender portals, so every amendment, corrigendum and added document reaches you the moment it's published."
+      },
+      {
+        "id": "discovery",
+        "source": { "label": "Solutions", "path": "/solutions#tender-discovery" },
+        "keywords": [
+          "tender discovery",
+          "discovery",
+          "find tenders",
+          "discover tenders",
+          "tender matching",
+          "matched tenders",
+          "opportunities",
+          "profile specific discovery",
+          "opt out of discovery",
+          "relevant tenders"
+        ],
+        "answer": "New tenders are matched against the specific profile of your firm or desk, not broadcast to everyone. Each opportunity is weighed against your capabilities, eligibility, sector and fit before it reaches your team. You choose how much you share to sharpen the match, and you can opt out of discovery entirely: it's never a requirement to use the rest of the platform."
+      },
+      {
+        "id": "market_intelligence",
+        "source": { "label": "Solutions", "path": "/solutions#market-intelligence" },
+        "keywords": [
+          "market intelligence",
+          "market insight",
+          "competitors",
+          "competitive bidding",
+          "bidding strategy",
+          "pricing strategy",
+          "commercial strategy",
+          "historical patterns",
+          "tender traffic"
+        ],
+        "answer": "Every market read is specific to the tender in front of you, not a recycled summary. It draws on current tender-traffic activity, research into historical patterns in that exact niche, competitive-bidding know-how suited to how the tender will play out, and the economics of that market. The aim is a commercial strategy grounded in evidence rather than a guess, with every finding traceable to its source."
+      },
+      {
+        "id": "collaboration",
+        "source": { "label": "Solutions", "path": "/solutions#bid-workspace" },
+        "keywords": [
+          "collaborate",
+          "collaboration",
+          "collaborate on a bid",
+          "team collaboration",
+          "multiple people",
+          "multiple users",
+          "multi user",
+          "bid workspace",
+          "shared workspace",
+          "multiple consultants",
+          "reviewers",
+          "seats"
+        ],
+        "answer": "Yes. Business workspaces give consultants, reviewers and sign-off leads a shared source of truth for tender documents, findings and bid decisions. Analysis and drafting happen in the same workspace, so several consultants can work the same tender without duplicating effort and keep evidence, analysis and drafts consistent. Business plans also include organizational deployment and priority support and onboarding."
+      },
+      {
+        "id": "human_in_loop",
+        "source": { "label": "Solutions", "path": "/solutions#human-in-loop" },
+        "keywords": [
+          "human in the loop",
+          "human oversight",
+          "override",
+          "sign off",
+          "black box",
+          "replace consultants",
+          "replace people",
+          "does ai make decisions",
+          "traceable",
+          "explainable",
+          "can i review",
+          "control"
+        ],
+        "answer": "A human is always in the loop. Ficungini proposes, checks and drafts, but every decision can be reviewed and overridden, and nothing reaches a submission without a human sign-off. Changing a validated item requires a reason, checked against existing evidence. Every recommendation is traceable, so nothing is a black box. The final call on strategy and submission stays with your consultants."
+      },
+      {
+        "id": "integrations",
+        "source": { "label": "Platform", "path": "/platform#integrations" },
+        "keywords": [
+          "erp",
+          "erp integration",
+          "integration",
+          "integrations",
+          "api",
+          "api access",
+          "connect my erp",
+          "integrate with erp",
+          "upload a tender",
+          "upload tenders",
+          "tender formats"
+        ],
+        "answer": "Ficungini works with any ERP that allows API access, with a one-click connection that you authorize once. Data moves over an encrypted API connection using GET requests only, in both directions: Ficungini can only read from your ERP, and your ERP can only read from Ficungini, and neither can create, change or delete anything in the other. Ficungini also runs any tender you upload directly, from any procuring authority and in any format."
+      },
+      {
+        "id": "pricing",
+        "source": { "label": "Pricing", "path": "/#pricing" },
+        "keywords": [
+          "pricing",
+          "price",
+          "prices",
+          "how much",
+          "how much does it cost",
+          "cost",
+          "plans",
+          "plan",
+          "individual plan",
+          "business plan",
+          "subscription",
+          "gst",
+          "how is pricing calculated",
+          "business quote"
+        ],
+        "answer": "There are two plans, and every capability is included in both.\n- **Individual:** ₹9,999 a month plus applicable GST, with complete platform access and monthly usage limits\n- **Business:** quoted around your team size, workspace needs and deployment scope. It adds collaborative workspaces, organizational deployment, and priority support and onboarding\nBoth include Tender Intelligence, Tender Repository, and Bid Studio & Archive. To get a Business quote, say \"book a demo\" and I'll take your details."
+      },
+      {
+        "id": "free_analysis",
+        "source": { "label": "Home page", "path": "/" },
+        "keywords": [
+          "free",
+          "free analysis",
+          "daily free analysis",
+          "free credit",
+          "analyze a tender free",
+          "complimentary analysis",
+          "free tier",
+          "try for free",
+          "after the free analysis"
+        ],
+        "answer": "You get a complimentary tender analysis each day. After your daily free analysis you can wait for the next day's free one, or choose a paid plan to keep reviewing tenders."
+      },
+      {
+        "id": "demo_info",
+        "source": { "label": "Pricing", "path": "/#pricing" },
+        "keywords": [
+          "how do i book a demo",
+          "how to book a demo",
+          "how do i get a quote",
+          "how to get a quote",
+          "how can i get a demo",
+          "how do i contact sales",
+          "how to contact sales"
+        ],
+        "answer": "You can book a demo from the Business plan in the pricing section, or say \"book a demo\" here and I'll take your details and pass them to the team. You review everything before it's sent, and a request is not a confirmed booking until the team confirms a time."
+      },
+      {
+        "id": "security",
+        "source": { "label": "Privacy Policy", "path": "/privacy#security-measures" },
+        "keywords": [
+          "security",
+          "secure",
+          "is my data secure",
+          "is my tender data secure",
+          "data security",
+          "encryption",
+          "encrypted",
+          "totp",
+          "two factor",
+          "authentication",
+          "access controls",
+          "protect my data",
+          "confidential"
+        ],
+        "answer": "Ficungini applies encryption, access controls and security monitoring to protect tender information, and your documents and analyses stay scoped to your organization's workspace.\n- Customer workspaces are encrypted\n- Data sent to or from Ficungini, including API and ERP integrations, uses encrypted channels\n- Platform access requires TOTP authentication\n- Data belonging to paid customers is not used to train general-purpose AI models"
+      },
+      {
+        "id": "solutions_audience",
+        "source": { "label": "Solutions", "path": "/solutions" },
+        "keywords": [
+          "tender consultancies",
+          "independent consultants",
+          "epc teams",
+          "oem teams",
+          "private tenders",
+          "public tenders",
+          "rfp",
+          "rfq",
+          "technical specifications",
+          "public and private"
+        ],
+        "answer": "Ficungini is built for tender consultancies, independent consultants, and EPC and OEM bid teams. It works for RFPs, RFQs, corrigenda and technical specifications across public procurement and private EPC or OEM bids. It doesn't promise a higher win rate: it gives experienced teams a sharper instrument that removes the grinding manual work and the guesswork, while every final decision stays in human hands."
+      },
+      {
+        "id": "company",
+        "source": { "label": "Company", "path": "/company" },
+        "keywords": [
+          "company",
+          "who built ficungini",
+          "who made ficungini",
+          "who is behind ficungini",
+          "founder",
+          "founders",
+          "team behind",
+          "mission",
+          "who runs ficungini",
+          "about the company"
+        ],
+        "answer": "Ficungini is built by tender experts, for tender experts, with a mission to bring clarity and rigorous precision to public and private procurement worldwide. It is operated by Rith in India. The team is small and builds the platform end to end: Kevalkumar S Jadhav is the founder and Rashmi Badiger is a software engineer."
+      },
+      {
+        "id": "documentation",
+        "source": { "label": "Documentation", "path": "/documentation" },
+        "keywords": [
+          "documentation",
+          "docs",
+          "guides",
+          "workflow guides",
+          "whitepaper",
+          "case studies",
+          "blogs",
+          "blog",
+          "benchmark methodology",
+          "resources"
+        ],
+        "answer": "The documentation page has the benchmark methodology, case studies, blogs and workflow guides. The guides cover **Bid Analysis** (upload a tender and get a requirement-level read of eligibility, compliance and a Go/No-Go recommendation) and **Craft Bid** (turn an analysed tender into a structured, reviewable bid draft, with your team in the loop). The benchmark whitepaper is still being prepared."
+      }
+    ]
+  },
+  "semantic": {
+    "thresholds": { "min_coverage": 0.55, "min_margin": 0.12, "certain": 0.8, "min_matches": 2 },
+    "concepts": {
+      "price": ["price", "prices", "pricing", "cost", "costs", "fee", "fees", "charge", "charges", "how much", "subscription", "plan", "plans", "rupee", "rupees", "inr", "gst", "expensive", "cheap", "afford", "billing", "payment"],
+      "free": ["free", "complimentary", "no cost", "daily free", "free credit", "free tier"],
+      "tender": ["tender", "tenders", "rfp", "rfps", "rfq", "rfqs", "bid", "bids", "procurement", "eoi", "opportunity", "opportunities"],
+      "analyze": ["analyze", "analyse", "analysis", "review", "evaluate", "assess", "understand", "extract"],
+      "compliance": ["compliance", "compliant", "eligibility", "eligible", "qualification", "qualifications", "requirement", "requirements", "clause", "clauses", "disqualification", "disqualified", "exemption", "exemptions"],
+      "change": ["corrigendum", "corrigenda", "amendment", "amendments", "addendum", "addenda", "revision", "revised"],
+      "discovery": ["discovery", "discover", "find", "sourcing", "match", "matched", "matching", "lead", "leads", "feed", "notification", "notifications"],
+      "decision": ["go no go", "go/no-go", "recommendation", "recommendations", "decide", "decision", "should we bid"],
+      "market": ["competitor", "competitors", "competitive", "rivals", "market", "intelligence"],
+      "security": ["secure", "security", "safe", "protect", "protection", "encryption", "encrypted", "encrypt", "confidential", "confidentiality", "breach", "totp", "authentication", "two factor", "2fa", "mfa"],
+      "delete": ["delete", "deleted", "deletion", "erase", "retention", "retain", "destroy", "purge", "zip"],
+      "privacy": ["privacy", "personal data", "personal information", "dpdp", "data protection", "rights"],
+      "train": ["train", "training", "fine tune", "fine-tune", "learn from"],
+      "team": ["team", "teams", "collaborate", "collaboration", "collaborative", "multi user", "multi-user", "seat", "seats", "colleagues", "shared", "together", "consultants"],
+      "integrate": ["integrate", "integration", "integrations", "connect", "connection", "erp", "api", "sync"],
+      "demo": ["demo", "demonstration", "walkthrough", "presentation"],
+      "contact": ["contact", "reach", "email", "call", "talk", "speak", "human", "person", "sales", "support", "get in touch"],
+      "company": ["founder", "founders", "built by", "behind", "mission", "headquarters", "founded"],
+      "ai": ["ai", "artificial intelligence", "machine learning", "model", "models", "llm", "automated", "automation", "agent", "agents"],
+      "oversight": ["human in the loop", "oversight", "override", "sign off", "approve", "control"],
+      "evidence": ["evidence", "traceable", "traceability", "sources", "citation", "citations", "proof", "verifiable", "explainable", "audit trail"],
+      "writing": ["draft", "drafting", "writer", "write", "craft bid", "proposal", "response", "submission"],
+      "docs": ["documentation", "docs", "guide", "guides", "whitepaper", "blog", "blogs", "case study", "case studies"],
+      "offer": ["offer", "provide", "sell", "supply", "available", "do you have"],
+      "help": ["help", "assist", "support", "capability", "capabilities", "can do"]
+    }
+  },
+  "legal": {
+    "disclaimer": "Summary only, not legal advice.",
+    "general": "Summary only, not legal advice. I can summarise parts of the Privacy Policy and Terms of Service, such as retention and deletion, model training, discovery, data sharing, your rights, who owns your content, and fees. For anything specific, please read the full text ([Privacy Policy](/privacy) and [Terms of Service](/terms)) or email legal@ficungini.ai. I can't give legal advice.",
+    "sources": {
+      "privacy": { "label": "Privacy Policy", "path": "/privacy" },
+      "terms": { "label": "Terms of Service", "path": "/terms" }
+    },
+    "topics": [
+      {
+        "id": "privacy_overview",
+        "policy": "privacy",
+        "section": "1",
+        "keywords": ["privacy policy", "privacy", "data policy", "tell me about your privacy"],
+        "answer": "The Privacy Policy (effective 29 September 2026) explains how Rith, operating the Ficungini platform, collects, uses, stores, protects and deletes information across its websites, applications, APIs, workspaces and discovery services. You can ask me about retention and deletion, model training, discovery, data sharing or your rights.",
+        "standalone": false
+      },
+      {
+        "id": "privacy_no_training",
+        "policy": "privacy",
+        "section": "10",
+        "keywords": ["model training", "train models", "train on my data", "training data", "fine tune", "used to train", "ai training", "train ai", "train your models"],
+        "answer": "Ficungini does not use data belonging to paid customers to train, fine-tune or improve general-purpose AI or machine-learning models, and paid-customer content and profile information are not put into general-purpose training datasets. Your information may still be processed through model-based systems when that is needed to provide a service you requested or authorized.",
+        "standalone": true
+      },
+      {
+        "id": "privacy_lifecycle",
+        "policy": "privacy",
+        "section": "13",
+        "keywords": ["delete my data", "data deletion", "deleted", "deletion", "tender closes", "closed tender", "closed tenders", "zip", "retention", "data retention", "how long do you keep", "how long is my data kept", "backups", "export my data"],
+        "answer": "After a tender reaches its designated closing state, its workspace documents are packaged into a ZIP archive and delivered through your authorized administrator, to an email address they choose. Once that export is complete, the documents are deleted from Ficungini's active servers. Backup or disaster-recovery systems may keep copies for a limited period under security controls until they are removed or overwritten. Ficungini does not intentionally keep closed-tender content indefinitely.",
+        "standalone": true
+      },
+      {
+        "id": "privacy_discovery",
+        "policy": "privacy",
+        "section": "4",
+        "keywords": ["discovery authorization", "authorize discovery", "withdraw discovery", "profile information", "profile specific discovery privacy", "opt out of discovery", "discovery consent"],
+        "answer": "Profile-specific discovery needs your authorization: Ficungini does not silently build a profile from your information. When you enable it, the profile information you provide is used to find tenders relevant to your stated capabilities. You can choose not to authorize it, or withdraw later. Because discovery is built around your profile, it cannot operate without that authorization, and withdrawal does not undo lawful processing that happened before.",
+        "standalone": true
+      },
+      {
+        "id": "privacy_sharing",
+        "policy": "privacy",
+        "section": "17",
+        "keywords": ["sell my data", "do you sell data", "share my data", "data sharing", "third parties", "third party providers", "who sees my data", "subprocessors"],
+        "answer": "Ficungini does not sell customer content or profile information. It discloses information only where reasonably necessary for the purpose at hand. It may use third-party providers needed to run the platform, with contractual and technical controls, and it does not authorize them to use paid-customer data for general-purpose model training.",
+        "standalone": true
+      },
+      {
+        "id": "privacy_rights",
+        "policy": "privacy",
+        "section": "21",
+        "keywords": ["my rights", "privacy rights", "data rights", "dpdp", "india data protection", "data protection act", "personal data rights"],
+        "answer": "Depending on the law and your circumstances, you may have rights over your personal information. Ficungini intends to operate in line with Indian data-protection requirements, including the Digital Personal Data Protection Act, 2023. Where Ficungini processes data for an organization, that organization may decide the purposes of the processing and be responsible for answering some requests. Privacy questions go to privacy@ficungini.ai.",
+        "standalone": true
+      },
+      {
+        "id": "contact_legal",
+        "policy": "privacy",
+        "section": "29",
+        "keywords": ["privacy contact", "privacy email", "legal contact", "legal email", "contact privacy team", "contact legal team", "data protection contact"],
+        "answer": "Privacy questions go to privacy@ficungini.ai, and questions about the Terms of Service go to legal@ficungini.ai. Ficungini is operated by Rith, in India.",
+        "standalone": true
+      },
+      {
+        "id": "terms_overview",
+        "policy": "terms",
+        "section": "1",
+        "keywords": ["terms of service", "terms of use", "terms and conditions", "terms", "t&c"],
+        "answer": "The Terms of Service set out the rules for using Ficungini. You can ask me about who owns your content, how reliable the outputs are, what discovery results do and don't promise, or fees and subscriptions.",
+        "standalone": false
+      },
+      {
+        "id": "terms_content",
+        "policy": "terms",
+        "section": "8",
+        "keywords": ["who owns my data", "content ownership", "ownership of content", "own my documents", "who owns my documents", "my tender documents", "intellectual property of my documents"],
+        "answer": "You keep your rights in your content. You give Ficungini a limited, non-exclusive right to host, process and analyze it only as needed to provide the services and the processing you authorize, to maintain and secure the service, prevent abuse, give support, comply with the law and enforce the Terms. Ficungini does not acquire ownership of your content just because you upload it.",
+        "standalone": true
+      },
+      {
+        "id": "terms_outputs",
+        "policy": "terms",
+        "section": "12",
+        "keywords": ["accuracy", "accurate", "errors", "mistakes", "reliable", "rely on outputs", "professional advice", "legal advice", "ai errors", "outputs", "can i rely on it"],
+        "answer": "Outputs such as requirement analysis, compliance findings, evidence matching, reports and summaries come from the information available to the service, and may not be complete, accurate, current or error-free. Review them yourself before relying on them for legal, financial, commercial, regulatory or procurement decisions. Generating an output does not mean Ficungini is giving legal, financial, tax, accounting or regulatory advice.",
+        "standalone": true
+      },
+      {
+        "id": "terms_no_guarantee",
+        "policy": "terms",
+        "section": "11",
+        "keywords": ["guarantee", "guaranteed", "win a tender", "will i win", "win tenders", "win rate", "complete results", "tender suitability"],
+        "answer": "Discovery results help you find potentially relevant opportunities. Ficungini does not guarantee that a tender suits you, that you are eligible or meet every requirement, that it will stay open, that it will be awarded to you, or that results are complete. You remain responsible for verifying requirements, deadlines, eligibility and commercial conditions.",
+        "standalone": true
+      },
+      {
+        "id": "terms_fees",
+        "policy": "terms",
+        "section": "23",
+        "keywords": ["refund", "refunds", "non refundable", "billing terms", "fees and subscriptions", "payment terms", "price changes"],
+        "answer": "Paid services need subscription or usage fees. Fees, billing periods, taxes, usage limits and payment terms are shown at purchase or set in your order form or customer agreement. Unless stated otherwise, fees are non-refundable, except where the law requires a refund or it is agreed in writing. Pricing for future subscription periods can change with reasonable notice.",
+        "standalone": true
+      }
+    ]
+  },
+  "submission_and_handoff": {
+    "submission_states": ["draft", "ready_to_submit", "submitted_pending_review", "accepted", "scheduled", "resolved", "rejected"],
+    "consent_required_before_submission": true
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "facts": [
+    {
+      "id": "company.001",
+      "url": "/company",
+      "page": "Company",
+      "heading": "Company | Ficungini",
+      "parts": [
+        "Company | Ficungini",
+        "Ficungini brings clarity and rigorous precision to public and private procurement worldwide, built by tender experts, for tender experts."
+      ],
+      "text": "Company | Ficungini Ficungini brings clarity and rigorous precision to public and private procurement worldwide, built by tender experts, for tender experts."
+    },
+    {
+      "id": "company.002",
+      "url": "/company",
+      "page": "Company",
+      "heading": "PLATFORM",
+      "parts": [
+        "PLATFORM",
+        "Platform",
+        "Go/No-Go, compliance flags, and market intelligence in one tender workspace."
+      ],
+      "text": "PLATFORM Platform Go/No-Go, compliance flags, and market intelligence in one tender workspace."
+    },
+    {
+      "id": "company.003",
+      "url": "/company",
+      "page": "Company",
+      "heading": "SOLUTIONS",
+      "parts": [
+        "SOLUTIONS",
+        "Solutions",
+        "Workflows built around consultancies, independent consultants, and EPC & OEM teams."
+      ],
+      "text": "SOLUTIONS Solutions Workflows built around consultancies, independent consultants, and EPC & OEM teams."
+    },
+    {
+      "id": "company.004",
+      "url": "/company",
+      "page": "Company",
+      "heading": "DOCUMENTATION",
+      "parts": [
+        "DOCUMENTATION",
+        "Documentation",
+        "Guides and references for setup, integration, and day-to-day analysis."
+      ],
+      "text": "DOCUMENTATION Documentation Guides and references for setup, integration, and day-to-day analysis."
+    },
+    {
+      "id": "company.005",
+      "url": "/company",
+      "page": "Company",
+      "heading": "Kevalkumar S Jadhav",
+      "parts": [
+        "Kevalkumar S Jadhav",
+        "Founder",
+        "Rashmi Badiger",
+        "Software Engineer",
+        "COMPANY",
+        "Built by tender experts, for tender experts",
+        "We are headquartered with a mission to bring clarity and rigorous precision to public and private procurement worldwide."
+      ],
+      "text": "Kevalkumar S Jadhav Founder Rashmi Badiger Software Engineer COMPANY Built by tender experts, for tender experts We are headquartered with a mission to bring clarity and rigorous precision to public and private procurement worldwide."
+    },
+    {
+      "id": "company.006",
+      "url": "/company",
+      "page": "Company",
+      "heading": "Team",
+      "parts": [
+        "Team",
+        "The people behind Ficungini.",
+        "A small team building the platform end to end."
+      ],
+      "text": "Team The people behind Ficungini. A small team building the platform end to end."
+    },
+    {
+      "id": "company.007",
+      "url": "/company",
+      "page": "Company",
+      "heading": "Ficungini",
+      "parts": [
+        "Ficungini",
+        "Trusted by consultancies, independent bid experts, and EPC teams."
+      ],
+      "text": "Ficungini Trusted by consultancies, independent bid experts, and EPC teams."
+    },
+    {
+      "id": "documentation.001",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "Documentation | Ficungini",
+      "parts": [
+        "Documentation | Ficungini",
+        "Benchmark methodology, whitepaper, case studies, blogs, workflow guides, and our privacy policy and terms of use."
+      ],
+      "text": "Documentation | Ficungini Benchmark methodology, whitepaper, case studies, blogs, workflow guides, and our privacy policy and terms of use."
+    },
+    {
+      "id": "documentation.002",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "Tender consultancy",
+      "parts": [
+        "Tender consultancy",
+        "Compliance review across a multi-tender bid pipeline",
+        "A tender consultancy runs the same live procurement documents through Ficungini and its existing workflow, checking which requirements each one identifies as applicable and what evidence supports them.",
+        "Blind, by the firm's senior tender professionals."
+      ],
+      "text": "Tender consultancy Compliance review across a multi-tender bid pipeline A tender consultancy runs the same live procurement documents through Ficungini and its existing workflow, checking which requirements each one identifies as applicable and what evidence supports them. Blind, by the firm's senior tender professionals."
+    },
+    {
+      "id": "documentation.003",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "EPC bid team",
+      "parts": [
+        "EPC bid team",
+        "Resolving eligibility gaps before submission",
+        "An EPC bid team evaluates a complex works tender where eligibility gaps and compliance issues surface late, and compares how each workflow flags them and whether they can be recovered.",
+        "Blind, by experienced bid managers on the team."
+      ],
+      "text": "EPC bid team Resolving eligibility gaps before submission An EPC bid team evaluates a complex works tender where eligibility gaps and compliance issues surface late, and compares how each workflow flags them and whether they can be recovered. Blind, by experienced bid managers on the team."
+    },
+    {
+      "id": "documentation.004",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "Tender consultancy",
+      "parts": [
+        "Tender consultancy",
+        "Finding the right opportunities for a specific organization",
+        "Given an organization's capabilities, each workflow surfaces relevant open opportunities, and reviewers judge how precisely the results fit what the organization can actually bid for.",
+        "Blind, by consultants who know the organization."
+      ],
+      "text": "Tender consultancy Finding the right opportunities for a specific organization Given an organization's capabilities, each workflow surfaces relevant open opportunities, and reviewers judge how precisely the results fit what the organization can actually bid for. Blind, by consultants who know the organization."
+    },
+    {
+      "id": "documentation.005",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "Bid Analysis",
+      "parts": [
+        "Bid Analysis",
+        "Upload a tender and get a requirement-level read of eligibility, compliance, and a Go/No-Go recommendation."
+      ],
+      "text": "Bid Analysis Upload a tender and get a requirement-level read of eligibility, compliance, and a Go/No-Go recommendation."
+    },
+    {
+      "id": "documentation.006",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "Craft Bid",
+      "parts": [
+        "Craft Bid",
+        "Turn an analysed tender into a structured, reviewable bid draft, with your team in the loop."
+      ],
+      "text": "Craft Bid Turn an analysed tender into a structured, reviewable bid draft, with your team in the loop."
+    },
+    {
+      "id": "documentation.007",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "WHITEPAPER",
+      "parts": [
+        "WHITEPAPER",
+        "The Tender Intelligence Benchmark whitepaper.",
+        "The full write-up of the benchmark dimensions, evaluation design, and results is being prepared and will be published here once the evaluation process is complete."
+      ],
+      "text": "WHITEPAPER The Tender Intelligence Benchmark whitepaper. The full write-up of the benchmark dimensions, evaluation design, and results is being prepared and will be published here once the evaluation process is complete."
+    },
+    {
+      "id": "documentation.008",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "DOCUMENTATION",
+      "parts": [
+        "DOCUMENTATION",
+        "Everything you need to master Ficungini",
+        "Benchmark methodology, whitepaper, case studies, blogs, and workflow guides."
+      ],
+      "text": "DOCUMENTATION Everything you need to master Ficungini Benchmark methodology, whitepaper, case studies, blogs, and workflow guides."
+    },
+    {
+      "id": "documentation.009",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "BENCHMARK METHODOLOGY",
+      "parts": [
+        "BENCHMARK METHODOLOGY",
+        "How the Tender Intelligence Benchmark is run.",
+        "Pilot evaluations are conducted with tender consultancy firms and EPC bid teams using real procurement documents. Each tender is processed with the same requirements, and outputs are reviewed blind by experienced tender professionals, who are not told which system produced which output. Results are published only after the evaluation process is complete.",
+        "Why tender AI needs a domain-specific benchmark",
+        "General benchmarks measure the wrong thing.",
+        "Reasoning and coding scores don't show whether a system caught the turnover threshold buried in a corrigendum.",
+        "Errors are costly and lopsided.",
+        "A missed eligibility clause can disqualify a bid, and a wrong Go or No-Go wastes drafting effort or forfeits a winnable contract."
+      ],
+      "text": "BENCHMARK METHODOLOGY How the Tender Intelligence Benchmark is run. Pilot evaluations are conducted with tender consultancy firms and EPC bid teams using real procurement documents. Each tender is processed with the same requirements, and outputs are reviewed blind by experienced tender professionals, who are not told which system produced which output. Results are published only after the evaluation process is complete. Why tender AI needs a domain-specific benchmark General benchmarks measure the wrong thing. Reasoning and coding scores don't show whether a system caught the turnover threshold buried in a corrigendum. Errors are costly and lopsided. A missed eligibility clause can disqualify a bid, and a wrong Go or No-Go wastes drafting effort or forfeits a winnable contract."
+    },
+    {
+      "id": "documentation.010",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "",
+      "parts": [
+        "Ground truth is domain expertise.",
+        "Only experienced tender professionals can judge whether a strategy is defensible and competitive.",
+        "Relevance depends on the organization.",
+        "A good tender for one firm is noise for another, so discovery must be scored against a specific profile and its capabilities."
+      ],
+      "text": "Ground truth is domain expertise. Only experienced tender professionals can judge whether a strategy is defensible and competitive. Relevance depends on the organization. A good tender for one firm is noise for another, so discovery must be scored against a specific profile and its capabilities."
+    },
+    {
+      "id": "documentation.011",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "CASE STUDIES",
+      "parts": [
+        "CASE STUDIES",
+        "Pilot case studies, built on the same benchmark.",
+        "Every case study is structured around the benchmark dimensions above and published as a documentary on our YouTube channel, without fabricated evidence.",
+        "Watch the case study documentaries on YouTube"
+      ],
+      "text": "CASE STUDIES Pilot case studies, built on the same benchmark. Every case study is structured around the benchmark dimensions above and published as a documentary on our YouTube channel, without fabricated evidence. Watch the case study documentaries on YouTube"
+    },
+    {
+      "id": "documentation.012",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "Documentary",
+      "parts": [
+        "Documentary",
+        "Evaluated on",
+        "Review:",
+        "Watch on YouTube",
+        "WORKFLOW GUIDES",
+        "Two workflows, from tender to bid."
+      ],
+      "text": "Documentary Evaluated on Review: Watch on YouTube WORKFLOW GUIDES Two workflows, from tender to bid."
+    },
+    {
+      "id": "documentation.013",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "BLOGS",
+      "parts": [
+        "BLOGS",
+        "Four field notes for bids that hold up under scrutiny.",
+        "Practical thinking on evidence, complications, drafting and the process metrics that make tender work stronger."
+      ],
+      "text": "BLOGS Four field notes for bids that hold up under scrutiny. Practical thinking on evidence, complications, drafting and the process metrics that make tender work stronger."
+    },
+    {
+      "id": "documentation.014",
+      "url": "/documentation",
+      "page": "Documentation",
+      "heading": "Read the field note",
+      "parts": [
+        "Read the field note"
+      ],
+      "text": "Read the field note"
+    },
+    {
+      "id": "platform.001",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Platform | Ficungini",
+      "parts": [
+        "Platform | Ficungini",
+        "Two agent-powered workflows, Bid Analysis and Craft Bid, from profile-specific discovery to an evidence-checked bid."
+      ],
+      "text": "Platform | Ficungini Two agent-powered workflows, Bid Analysis and Craft Bid, from profile-specific discovery to an evidence-checked bid."
+    },
+    {
+      "id": "platform.002",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Discovery",
+      "parts": [
+        "Discovery",
+        "Profile-specific discovery",
+        "Tenders matched to your profile, with a notification only when the call is Go or Conditional Go."
+      ],
+      "text": "Discovery Profile-specific discovery Tenders matched to your profile, with a notification only when the call is Go or Conditional Go."
+    },
+    {
+      "id": "platform.003",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Intelligence",
+      "parts": [
+        "Intelligence",
+        "Verifiable market intelligence",
+        "Multi-parameter market context, each finding traceable to its source so your team can verify it."
+      ],
+      "text": "Intelligence Verifiable market intelligence Multi-parameter market context, each finding traceable to its source so your team can verify it."
+    },
+    {
+      "id": "platform.004",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Strategy",
+      "parts": [
+        "Strategy",
+        "Complication resolution and planning",
+        "Specialized AI assistance to work through tender complications and shape the bid strategy."
+      ],
+      "text": "Strategy Complication resolution and planning Specialized AI assistance to work through tender complications and shape the bid strategy."
+    },
+    {
+      "id": "platform.005",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Writing",
+      "parts": [
+        "Writing",
+        "Human-assisted, evidence-checked bid writer",
+        "Drafts back-checked against the evidence-backed analysis and strategy, finalised in your niche's bid format and vocabulary."
+      ],
+      "text": "Writing Human-assisted, evidence-checked bid writer Drafts back-checked against the evidence-backed analysis and strategy, finalised in your niche's bid format and vocabulary."
+    },
+    {
+      "id": "platform.006",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "One-click connect",
+      "parts": [
+        "One-click connect",
+        "Authorize a connection once, with no custom integration project or engineering queue."
+      ],
+      "text": "One-click connect Authorize a connection once, with no custom integration project or engineering queue."
+    },
+    {
+      "id": "platform.007",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Encrypted, read-only both ways",
+      "parts": [
+        "Encrypted, read-only both ways",
+        "Data moves over an encrypted API connection using GET requests only. Ficungini reads from your ERP, and your ERP reads from Ficungini. Neither side gets write access."
+      ],
+      "text": "Encrypted, read-only both ways Data moves over an encrypted API connection using GET requests only. Ficungini reads from your ERP, and your ERP reads from Ficungini. Neither side gets write access."
+    },
+    {
+      "id": "platform.008",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Any ERP with an API",
+      "parts": [
+        "Any ERP with an API",
+        "If your ERP permits API access, we can connect to it to draw on project, financial, and document records."
+      ],
+      "text": "Any ERP with an API If your ERP permits API access, we can connect to it to draw on project, financial, and document records."
+    },
+    {
+      "id": "platform.009",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "PLATFORM",
+      "parts": [
+        "PLATFORM",
+        "Winning starts long before the proposal is written.",
+        "The quality of a bid depends on the decisions behind it: eligibility, compliance, clarifications, commercial strategy, and market context. Ficungini brings them together in one place."
+      ],
+      "text": "PLATFORM Winning starts long before the proposal is written. The quality of a bid depends on the decisions behind it: eligibility, compliance, clarifications, commercial strategy, and market context. Ficungini brings them together in one place."
+    },
+    {
+      "id": "platform.010",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "Integrations",
+      "parts": [
+        "Integrations",
+        "One-click, encrypted, GET-only integration with your ERP.",
+        "Ficungini works with any ERP that allows API access. Access is GET-only in both directions: Ficungini can only read from your ERP, and your ERP can only read from Ficungini. Neither side can create, change, or delete anything in the other. Ficungini also runs any tender you upload directly, from any procuring authority and in any format."
+      ],
+      "text": "Integrations One-click, encrypted, GET-only integration with your ERP. Ficungini works with any ERP that allows API access. Access is GET-only in both directions: Ficungini can only read from your ERP, and your ERP can only read from Ficungini. Neither side can create, change, or delete anything in the other. Ficungini also runs any tender you upload directly, from any procuring authority and in any format."
+    },
+    {
+      "id": "platform.011",
+      "url": "/platform",
+      "page": "Platform",
+      "heading": "View Integration Documentation",
+      "parts": [
+        "View Integration Documentation",
+        "Capabilities",
+        "What your team knows before writing a bid"
+      ],
+      "text": "View Integration Documentation Capabilities What your team knows before writing a bid"
+    },
+    {
+      "id": "solutions.001",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Solutions | Ficungini",
+      "parts": [
+        "Solutions | Ficungini",
+        "Tender discovery tuned to you, a high-performance bid workspace, market intelligence you can trust, and a human always in the loop."
+      ],
+      "text": "Solutions | Ficungini Tender discovery tuned to you, a high-performance bid workspace, market intelligence you can trust, and a human always in the loop."
+    },
+    {
+      "id": "solutions.002",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Tender Discovery, Tuned to You",
+      "parts": [
+        "Tender Discovery, Tuned to You",
+        "Matched to your track record, not dropped into a generic feed",
+        "New tenders are matched against the specific profile of your firm or desk, not broadcast to everyone. You choose how much you share to sharpen that match, right down to opting out of discovery entirely if privacy is a concern.",
+        "Prioritizing the tenders worth chasing instead of sifting through irrelevant listings",
+        "Controlling exactly how much you share to sharpen your match",
+        "Opting out of discovery entirely when a desk prefers to source tenders on its own"
+      ],
+      "text": "Tender Discovery, Tuned to You Matched to your track record, not dropped into a generic feed New tenders are matched against the specific profile of your firm or desk, not broadcast to everyone. You choose how much you share to sharpen that match, right down to opting out of discovery entirely if privacy is a concern. Prioritizing the tenders worth chasing instead of sifting through irrelevant listings Controlling exactly how much you share to sharpen your match Opting out of discovery entirely when a desk prefers to source tenders on its own"
+    },
+    {
+      "id": "solutions.003",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Signal over noise",
+      "parts": [
+        "Signal over noise",
+        "Fewer, better-matched opportunities instead of a flooded inbox."
+      ],
+      "text": "Signal over noise Fewer, better-matched opportunities instead of a flooded inbox."
+    },
+    {
+      "id": "solutions.004",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Privacy by choice",
+      "parts": [
+        "Privacy by choice",
+        "Discovery is optional. It's never a requirement to use the rest of the platform."
+      ],
+      "text": "Privacy by choice Discovery is optional. It's never a requirement to use the rest of the platform."
+    },
+    {
+      "id": "solutions.005",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "A High-Performance Bid Workspace",
+      "parts": [
+        "A High-Performance Bid Workspace",
+        "Built for teams that already know how to win",
+        "Ficungini doesn't replace judgment, it sharpens it. Analysis and drafting happen in the same workspace, so high-performing teams move from a stack of tender documents to a submission-ready bid without losing pace or consistency.",
+        "Multiple consultants working the same tender without duplicating effort",
+        "Moving from requirement analysis straight into drafting, in one workspace",
+        "Keeping evidence, analysis, and drafts consistent across the team"
+      ],
+      "text": "A High-Performance Bid Workspace Built for teams that already know how to win Ficungini doesn't replace judgment, it sharpens it. Analysis and drafting happen in the same workspace, so high-performing teams move from a stack of tender documents to a submission-ready bid without losing pace or consistency. Multiple consultants working the same tender without duplicating effort Moving from requirement analysis straight into drafting, in one workspace Keeping evidence, analysis, and drafts consistent across the team"
+    },
+    {
+      "id": "solutions.006",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Speed",
+      "parts": [
+        "Speed",
+        "Far less time spent manually reading and re-reading dense tender documents."
+      ],
+      "text": "Speed Far less time spent manually reading and re-reading dense tender documents."
+    },
+    {
+      "id": "solutions.007",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Consistency",
+      "parts": [
+        "Consistency",
+        "The same rigor whether the tender is handled by one person or by twelve."
+      ],
+      "text": "Consistency The same rigor whether the tender is handled by one person or by twelve."
+    },
+    {
+      "id": "solutions.008",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Market Intelligence You Can Trust",
+      "parts": [
+        "Market Intelligence You Can Trust",
+        "Insight built for this tender, not a generic industry report",
+        "Every market read is specific to the tender in front of you, not a recycled summary. It's backed by current tender-traffic activity, deep research into historical patterns in that exact niche, competitive-bidding know-how suited to how this tender will actually play out, and an understanding of the economics of that specific market.",
+        "Real-time tender-traffic signals instead of stale reports",
+        "Historical patterns researched for that particular niche",
+        "Competitive-bidding know-how suited to this specific tender",
+        "An understanding of the economics of the market the tender sits in"
+      ],
+      "text": "Market Intelligence You Can Trust Insight built for this tender, not a generic industry report Every market read is specific to the tender in front of you, not a recycled summary. It's backed by current tender-traffic activity, deep research into historical patterns in that exact niche, competitive-bidding know-how suited to how this tender will actually play out, and an understanding of the economics of that specific market. Real-time tender-traffic signals instead of stale reports Historical patterns researched for that particular niche Competitive-bidding know-how suited to this specific tender An understanding of the economics of the market the tender sits in"
+    },
+    {
+      "id": "solutions.009",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Pricing confidence",
+      "parts": [
+        "Pricing confidence",
+        "A commercial strategy grounded in evidence, not a guess."
+      ],
+      "text": "Pricing confidence A commercial strategy grounded in evidence, not a guess."
+    },
+    {
+      "id": "solutions.010",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Context before commitment",
+      "parts": [
+        "Context before commitment",
+        "A read on how a tender is likely to play out before hours are invested.",
+        "A Human in the Loop, Always",
+        "An assistant that works with you, not around you",
+        "Reviewing and overriding any AI-generated finding before it reaches the bid",
+        "Requiring a reason whenever a validated item is changed, checked against existing evidence",
+        "Keeping the final call on strategy and submission with your consultants, always"
+      ],
+      "text": "Context before commitment A read on how a tender is likely to play out before hours are invested. A Human in the Loop, Always An assistant that works with you, not around you Reviewing and overriding any AI-generated finding before it reaches the bid Requiring a reason whenever a validated item is changed, checked against existing evidence Keeping the final call on strategy and submission with your consultants, always"
+    },
+    {
+      "id": "solutions.011",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Control",
+      "parts": [
+        "Control",
+        "Nothing reaches a submission without a human sign-off."
+      ],
+      "text": "Control Nothing reaches a submission without a human sign-off."
+    },
+    {
+      "id": "solutions.012",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Trust",
+      "parts": [
+        "Trust",
+        "Every AI decision is inspectable, never a black box."
+      ],
+      "text": "Trust Every AI decision is inspectable, never a black box."
+    },
+    {
+      "id": "solutions.013",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "SOLUTIONS",
+      "parts": [
+        "SOLUTIONS",
+        "Built around how your team actually bids.",
+        "Discovery tuned to you, a high-performance workspace, market intelligence you can trust, and a human always in the loop."
+      ],
+      "text": "SOLUTIONS Built around how your team actually bids. Discovery tuned to you, a high-performance workspace, market intelligence you can trust, and a human always in the loop."
+    },
+    {
+      "id": "solutions.014",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "Solutions",
+      "parts": [
+        "Solutions",
+        "What Ficungini actually does",
+        "Ficungini doesn't promise a higher win rate. It gives experienced teams a sharper instrument, one that removes the grinding manual work and the guesswork, while every final decision stays in human hands."
+      ],
+      "text": "Solutions What Ficungini actually does Ficungini doesn't promise a higher win rate. It gives experienced teams a sharper instrument, one that removes the grinding manual work and the guesswork, while every final decision stays in human hands."
+    },
+    {
+      "id": "solutions.015",
+      "url": "/solutions",
+      "page": "Solutions",
+      "heading": "In practice",
+      "parts": [
+        "In practice",
+        "What it solves"
+      ],
+      "text": "In practice What it solves"
+    },
+    {
+      "id": "home-whyficungini.001",
+      "url": "/",
+      "page": "Home page",
+      "heading": "",
+      "parts": [
+        "One clear view of the market",
+        "Several different kinds of market insight brought together into a single strategic read on where a tender stands."
+      ],
+      "text": "One clear view of the market Several different kinds of market insight brought together into a single strategic read on where a tender stands."
+    },
+    {
+      "id": "home-whyficungini.002",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Compliance you can point to",
+      "parts": [
+        "Compliance you can point to",
+        "Every compliance conclusion is backed by evidence from the tender itself, not a guess."
+      ],
+      "text": "Compliance you can point to Every compliance conclusion is backed by evidence from the tender itself, not a guess."
+    },
+    {
+      "id": "home-whyficungini.003",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Discovery built around you",
+      "parts": [
+        "Discovery built around you",
+        "Opportunities matched to your organization's specific capabilities and priorities, not dropped into a generic feed."
+      ],
+      "text": "Discovery built around you Opportunities matched to your organization's specific capabilities and priorities, not dropped into a generic feed."
+    },
+    {
+      "id": "home-whyficungini.004",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Strategy built for this bid",
+      "parts": [
+        "Strategy built for this bid",
+        "Competitive advantages, exemptions, and paths to winning identified specifically for the tender in front of you."
+      ],
+      "text": "Strategy built for this bid Competitive advantages, exemptions, and paths to winning identified specifically for the tender in front of you."
+    },
+    {
+      "id": "home-whyficungini.005",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Every recommendation, traceable",
+      "parts": [
+        "Every recommendation, traceable",
+        "Nothing is a black box. Your team can review, question, and defend every recommendation Ficungini makes.",
+        "Built for teams that already perform",
+        "Made to amplify experienced tender consultants, EPC bid teams, and procurement professionals, while keeping humans in control."
+      ],
+      "text": "Every recommendation, traceable Nothing is a black box. Your team can review, question, and defend every recommendation Ficungini makes. Built for teams that already perform Made to amplify experienced tender consultants, EPC bid teams, and procurement professionals, while keeping humans in control."
+    },
+    {
+      "id": "home-whyficungini.006",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Why Ficungini",
+      "parts": [
+        "Why Ficungini",
+        "Why bid teams choose Ficungini",
+        "Built to amplify expert judgment with intelligence your team can trace, question, and trust."
+      ],
+      "text": "Why Ficungini Why bid teams choose Ficungini Built to amplify expert judgment with intelligence your team can trace, question, and trust."
+    },
+    {
+      "id": "home-challenges.001",
+      "url": "/",
+      "page": "Home page",
+      "heading": "",
+      "parts": [
+        "Too many tenders to keep track of",
+        "Relevant opportunities get buried across portals and mailing lists faster than any one person can watch.",
+        "The right leads land in front of you",
+        "Ficungini surfaces tenders that fit your business, and you decide how much you share to sharpen the match. It's entirely optional.",
+        "Not every lead is worth chasing",
+        "A pile of tender notices doesn't tell you which ones you can actually win.",
+        "Every lead checked before it reaches you",
+        "Each opportunity is weighed against your capabilities, eligibility, sector, and fit before it ever lands on your team's desk."
+      ],
+      "text": "Too many tenders to keep track of Relevant opportunities get buried across portals and mailing lists faster than any one person can watch. The right leads land in front of you Ficungini surfaces tenders that fit your business, and you decide how much you share to sharpen the match. It's entirely optional. Not every lead is worth chasing A pile of tender notices doesn't tell you which ones you can actually win. Every lead checked before it reaches you Each opportunity is weighed against your capabilities, eligibility, sector, and fit before it ever lands on your team's desk."
+    },
+    {
+      "id": "home-challenges.002",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Corrigenda quietly change the rules",
+      "parts": [
+        "Corrigenda quietly change the rules",
+        "A revised annexure lands mid-cycle and the team is still working from the original document."
+      ],
+      "text": "Corrigenda quietly change the rules A revised annexure lands mid-cycle and the team is still working from the original document."
+    },
+    {
+      "id": "home-challenges.003",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Nothing slips past you mid-cycle",
+      "parts": [
+        "Nothing slips past you mid-cycle",
+        "Ficungini keeps watch on tender portals so every amendment, corrigendum, and added document reaches you the moment it's published.",
+        "Pricing strategy is mostly a guess",
+        "Without real market context, commercial strategy comes down to instinct and last year's number.",
+        "Pricing backed by real market context",
+        "Current tender activity, historical patterns, competitive dynamics, and the economics of your specific niche, all brought together so your number is grounded in something real."
+      ],
+      "text": "Nothing slips past you mid-cycle Ficungini keeps watch on tender portals so every amendment, corrigendum, and added document reaches you the moment it's published. Pricing strategy is mostly a guess Without real market context, commercial strategy comes down to instinct and last year's number. Pricing backed by real market context Current tender activity, historical patterns, competitive dynamics, and the economics of your specific niche, all brought together so your number is grounded in something real."
+    },
+    {
+      "id": "home-challenges.004",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Hidden disqualification clauses",
+      "parts": [
+        "Hidden disqualification clauses",
+        "A single missed exemption or eligibility path can knock a bid out before it's even reviewed.",
+        "It looks for the way in, not just the rules",
+        "Beyond the obvious requirements, Ficungini actively searches for missing qualifications, exemptions, and alternative eligibility paths before you submit."
+      ],
+      "text": "Hidden disqualification clauses A single missed exemption or eligibility path can knock a bid out before it's even reviewed. It looks for the way in, not just the rules Beyond the obvious requirements, Ficungini actively searches for missing qualifications, exemptions, and alternative eligibility paths before you submit."
+    },
+    {
+      "id": "home-challenges.005",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Sensitive tender data stored indefinitely",
+      "parts": [
+        "Sensitive tender data stored indefinitely",
+        "Commercially sensitive documents shouldn't sit on a server forever once the deal is done.",
+        "Your data leaves when the tender closes",
+        "Once a tender closes, Ficungini notifies you, hands over the complete project as a single file to your inbox, and permanently deletes it from the platform."
+      ],
+      "text": "Sensitive tender data stored indefinitely Commercially sensitive documents shouldn't sit on a server forever once the deal is done. Your data leaves when the tender closes Once a tender closes, Ficungini notifies you, hands over the complete project as a single file to your inbox, and permanently deletes it from the platform."
+    },
+    {
+      "id": "home-challenges.006",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Challenges",
+      "parts": [
+        "Challenges",
+        "Real Problems, Not Hypotheticals",
+        "The challenges we solve.",
+        "The same handful of problems we hear from almost every bid team before they switch to Ficungini."
+      ],
+      "text": "Challenges Real Problems, Not Hypotheticals The challenges we solve. The same handful of problems we hear from almost every bid team before they switch to Ficungini."
+    },
+    {
+      "id": "home-challenges.007",
+      "url": "/",
+      "page": "Home page",
+      "heading": "The Challenge",
+      "parts": [
+        "The Challenge",
+        "Common problems faced by bid teams"
+      ],
+      "text": "The Challenge Common problems faced by bid teams"
+    },
+    {
+      "id": "home-challenges.008",
+      "url": "/",
+      "page": "Home page",
+      "heading": "The Ficungini Solution",
+      "parts": [
+        "The Ficungini Solution",
+        "How Ficungini helps you overcome them"
+      ],
+      "text": "The Ficungini Solution How Ficungini helps you overcome them"
+    },
+    {
+      "id": "home-challenges.009",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Privacy note",
+      "parts": [
+        "Privacy note",
+        "Tender matching is optional. You decide how much business information to share, and match quality depends on what you choose to provide."
+      ],
+      "text": "Privacy note Tender matching is optional. You decide how much business information to share, and match quality depends on what you choose to provide."
+    },
+    {
+      "id": "home-pricing.001",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Pricing",
+      "parts": [
+        "Pricing",
+        "Simple, transparent pricing",
+        "Every capability is included in both plans. Choose what fits how your team works."
+      ],
+      "text": "Pricing Simple, transparent pricing Every capability is included in both plans. Choose what fits how your team works."
+    },
+    {
+      "id": "home-pricing.002",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Individual",
+      "parts": [
+        "Individual",
+        "Individual",
+        "+ applicable GST. Complete platform access with monthly usage limits."
+      ],
+      "text": "Individual Individual + applicable GST. Complete platform access with monthly usage limits."
+    },
+    {
+      "id": "home-pricing.003",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Get Started",
+      "parts": [
+        "Get Started",
+        "Includes",
+        "Tender Intelligence",
+        "Tender Repository",
+        "Bid Studio & Archive",
+        "Business",
+        "Business",
+        "Request a Quote",
+        "For consultancy firms and organizations with multi-seat needs."
+      ],
+      "text": "Get Started Includes Tender Intelligence Tender Repository Bid Studio & Archive Business Business Request a Quote For consultancy firms and organizations with multi-seat needs."
+    },
+    {
+      "id": "home-pricing.004",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Book a Demo",
+      "parts": [
+        "Book a Demo",
+        "Everything in Individual, plus",
+        "Collaborative workspaces",
+        "Organizational deployment",
+        "Priority support & onboarding"
+      ],
+      "text": "Book a Demo Everything in Individual, plus Collaborative workspaces Organizational deployment Priority support & onboarding"
+    },
+    {
+      "id": "home-faq.001",
+      "url": "/",
+      "page": "Home page",
+      "heading": "",
+      "parts": [
+        "What is Ficungini?",
+        "Ficungini is a tender intelligence workspace that helps you decide whether to bid, surface compliance requirements, and organize the evidence needed to build a stronger response.",
+        "How is pricing calculated?",
+        "The Individual plan is a fixed monthly subscription with the full platform and monthly usage limits. Business plans are quoted around your team size, workspace needs, and deployment scope.",
+        "Is my tender data secure?",
+        "Ficungini applies encryption, access controls, and security monitoring to protect tender information. Your documents and analyses remain scoped to your organization's workspace.",
+        "Can multiple people collaborate on a bid?",
+        "Yes. Business workspaces give consultants, reviewers, and sign-off leads a shared source of truth for tender documents, findings, and bid decisions."
+      ],
+      "text": "What is Ficungini? Ficungini is a tender intelligence workspace that helps you decide whether to bid, surface compliance requirements, and organize the evidence needed to build a stronger response. How is pricing calculated? The Individual plan is a fixed monthly subscription with the full platform and monthly usage limits. Business plans are quoted around your team size, workspace needs, and deployment scope. Is my tender data secure? Ficungini applies encryption, access controls, and security monitoring to protect tender information. Your documents and analyses remain scoped to your organization's workspace. Can multiple people collaborate on a bid? Yes. Business workspaces give consultants, reviewers, and sign-off leads a shared source of truth for tender documents, findings, and bid decisions."
+    },
+    {
+      "id": "home-faq.002",
+      "url": "/",
+      "page": "Home page",
+      "heading": "",
+      "parts": [
+        "Does it work for private and public tenders?",
+        "Yes. Ficungini is designed for RFPs, RFQs, corrigenda, and technical specifications across public procurement and private EPC or OEM bids.",
+        "What happens after my daily free analysis?",
+        "You can wait for the next day's complimentary analysis or choose a paid plan to continue reviewing tenders beyond the daily free credit."
+      ],
+      "text": "Does it work for private and public tenders? Yes. Ficungini is designed for RFPs, RFQs, corrigenda, and technical specifications across public procurement and private EPC or OEM bids. What happens after my daily free analysis? You can wait for the next day's complimentary analysis or choose a paid plan to continue reviewing tenders beyond the daily free credit."
+    },
+    {
+      "id": "home-faq.003",
+      "url": "/",
+      "page": "Home page",
+      "heading": "FAQ",
+      "parts": [
+        "FAQ",
+        "Frequently asked questions.",
+        "Still something on your mind?"
+      ],
+      "text": "FAQ Frequently asked questions. Still something on your mind?"
+    },
+    {
+      "id": "home-faq.004",
+      "url": "/",
+      "page": "Home page",
+      "heading": "Read the docs",
+      "parts": [
+        "Read the docs",
+        "Talk to sales"
+      ],
+      "text": "Read the docs Talk to sales"
+    },
+    {
+      "id": "platform-explorer.001",
+      "url": "/platform#explorer",
+      "page": "Platform",
+      "heading": "Bid Analysis",
+      "parts": [
+        "Bid Analysis",
+        "Six specialized agents, from discovery to Go / No-Go",
+        "Six specialized agents find the tenders that fit your profile and analyse them, so you only hear about the ones worth pursuing.",
+        "Profile-specific discovery, with a notification only if the call is Go or Conditional Go",
+        "Multi-parameter, verifiable market intelligence traceable to its source"
+      ],
+      "text": "Bid Analysis Six specialized agents, from discovery to Go / No-Go Six specialized agents find the tenders that fit your profile and analyse them, so you only hear about the ones worth pursuing. Profile-specific discovery, with a notification only if the call is Go or Conditional Go Multi-parameter, verifiable market intelligence traceable to its source"
+    },
+    {
+      "id": "platform-explorer.002",
+      "url": "/platform#explorer",
+      "page": "Platform",
+      "heading": "Craft Bid",
+      "parts": [
+        "Craft Bid",
+        "Eight specialized agents, from strategy to submission",
+        "Eight specialized agents work through complications and plan strategy, then help your team write the bid.",
+        "Specialized AI assistance for complication resolution and strategic planning",
+        "Human-assisted AI bid writer, back-checked against the evidence-backed analysis and strategy",
+        "Finalised in niche-specific bid format and vocabulary",
+        "Open any module to see how it works."
+      ],
+      "text": "Craft Bid Eight specialized agents, from strategy to submission Eight specialized agents work through complications and plan strategy, then help your team write the bid. Specialized AI assistance for complication resolution and strategic planning Human-assisted AI bid writer, back-checked against the evidence-backed analysis and strategy Finalised in niche-specific bid format and vocabulary Open any module to see how it works."
+    }
+  ]
+}

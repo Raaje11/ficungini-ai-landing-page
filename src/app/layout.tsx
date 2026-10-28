@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Fira_Code, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import SupportChat from "@/components/chat/SupportChat";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -29,7 +30,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`scroll-smooth ${dmSans.variable} ${firaCode.variable} ${robotoMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <SupportChat />
+      </body>
     </html>
   );
 }

@@ -158,3 +158,86 @@ body {
     0 1px 0 color-mix(in oklab, var(--matte-black) 4%, transparent),
     0 12px 24px -16px color-mix(in oklab, var(--matte-black) 18%, transparent);
 }
+
+/* Fico, the support assistant. Tokens are mixes of the four palette colours; the
+   state colours reuse Iris and Electric Coral rather than introducing a new hue. */
+.fico-chat {
+  --oc-bg: #ffffff;
+  --oc-text: var(--matte-black);
+  --oc-text-2: color-mix(in oklab, var(--matte-black) 70%, var(--alabaster));
+  --oc-muted: color-mix(in oklab, var(--matte-black) 55%, var(--alabaster));
+  --oc-border: color-mix(in oklab, var(--matte-black) 12%, var(--alabaster));
+  --oc-surface: color-mix(in oklab, var(--matte-black) 4%, var(--alabaster));
+  --oc-surface-hover: color-mix(in oklab, var(--pantone) 14%, var(--alabaster));
+  --oc-brand: var(--pantone);
+  --oc-brand-hover: color-mix(in oklab, var(--pantone) 88%, var(--matte-black));
+  --oc-success: var(--iris);
+  --oc-warning: color-mix(in oklab, var(--pantone) 70%, var(--matte-black));
+  --oc-danger: color-mix(in oklab, var(--pantone) 70%, var(--matte-black));
+  --oc-shadow: 0 1px 3px color-mix(in oklab, var(--matte-black) 8%, transparent);
+  font-family: var(--font-dm-sans), "Google Sans", sans-serif;
+  color: var(--oc-text);
+}
+
+.fico-chat .oc-scroll {
+  scrollbar-width: none;
+}
+.fico-chat .oc-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fico-chat,
+  .fico-chat * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Two more mixes of the palette, for the orb's shading and the highlight Fico draws around what it points at. */
+:root {
+  --pantone-deep: color-mix(in srgb, var(--pantone) 70%, var(--matte-black));
+  --pantone-pale: color-mix(in oklab, var(--pantone) 14%, var(--alabaster));
+}
+
+/* The Fico launcher floats gently. Still for anyone who asks for less motion. */
+@keyframes orb-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+.orb-float {
+  animation: orb-float 4.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .orb-float {
+    animation: none;
+  }
+}
+
+/* Fico showing someone around: the click, and the highlight on what it points at. */
+@keyframes orb-ripple {
+  from {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0.95;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(3.6);
+    opacity: 0;
+  }
+}
+@keyframes orb-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--pantone) 55%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 14px color-mix(in srgb, var(--pantone) 0%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--pantone) 0%, transparent);
+  }
+}
